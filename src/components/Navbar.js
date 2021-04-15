@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import Dropdown from "./Dropdown";
 import logo from "../assets/ANON _ Edyta LOGO2 białe kółko - small.png";
+import logoTitle from "../assets/ANON _ Edyta LOGO white small.png";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -38,7 +39,8 @@ function Navbar() {
     <>
       <nav className="navbar">
         <Link to="/" className="navbar-logo">
-          ANON <img className="navbar__logo" src={logo} alt="Logo" />
+          <img className="navbar-logo__title" src={logoTitle} alt="Anon" />
+          <img className="navbar__logo" src={logo} alt="Logo" />
         </Link>
         <div className="menu-icon" onClick={handleClick}>
           <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
@@ -93,7 +95,7 @@ function Navbar() {
 
           <li className="nav-item">
             <Link
-              t="/subscribe"
+              to="/subscribe"
               className="nav-links-mobile"
               onClick={closeMobileMenu}
             >

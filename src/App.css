@@ -6,25 +6,60 @@
   }
   
   .home,
-  .services,
-  .products,
+  .articles,
+  .about,
+  .membership,
   .contact-us,
-  .sign-up,
-  .marketing,
-  .consulting,
-  .design,
-  .development {
+  .subscribe,
+  .news,
+  .society,
+  .science,
+  .criminal {
     display: flex;
+    align-items: flex-start;
+    justify-content: left;
     height: 90vh;
-    align-items: center;
-    justify-content: center;
     font-size: 3rem;
+    animation-name: start; 
+    animation-duration: 2s;
   }
 
-
+p{
+  margin:30px 0 0 30px;
+  background-color: rgba(28, 27, 27,0.8);
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 4rem;
+ 
+}
   
   .home {
-    background-image: url('./images/Main-page-picture.jpeg');
+    background-image: url('./images/web/WEB-Home-picture.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+    flex-direction: row-reverse;
+    justify-content: right;
+    align-items: flex-start;
+  }
+
+  .home__article{
+    background:rgba(28, 27, 27,0.5);
+    border-radius: 20px;
+    width:25vw;
+    margin-right: 5vw;
+    margin-top:8vh;
+    padding: 20px;
+    font-size: 2rem;
+    text-align: center;
+    animation-name: start; 
+    animation-duration: 3s;
+ }
+  
+  .articles {
+    background-image: url('./images/web/WEB-Articles-picture.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -32,8 +67,8 @@
     font-size: 100px;
   }
   
-  .services {
-    background-image: url('./images/img-2.jpg');
+  .about {
+    background-image: url('./images/web/WEB-About-picture.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -41,17 +76,29 @@
     font-size: 100px;
   }
   
-  .products {
-    background-image: url('./images/img-3.jpg');
+  .membership {
+    background-image: url('./images/web/WEB-Membership-picture.jpg');
     background-position: center;
-    background-size: fill;
+    background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
     font-size: 100px;
+    flex-direction: row-reverse;
+    justify-content: right;
+    align-items: flex-start;
   }
-  
+
+  .membership p {
+      margin:30px 30px 0 0;
+      background-color: rgba(28, 27, 27,0.8);
+      border-radius: 20px;
+      padding: 20px;
+      font-size: 4rem;
+      /* color:black; */
+  }
+
   .contact-us {
-    background-image: url('./images/img-4.jpg');
+    background-image: url('./images/web/WEB-ContactUs-picture2.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -59,8 +106,51 @@
     font-size: 100px;
   }
   
-  .sign-up {
-    background-image: url('./images/img-7.jpg');
+  .subscribe {
+    background-image: url('./images/web/WEB-Subscribe-picture.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
+
+  .subscribe__form{
+    position: fixed;
+    top:10vh;
+    right:5vw;
+  }
+  .subscribe__form button{
+      padding:8px 20px;
+      border-radius: 4px;
+      outline:none;
+      border:none;
+      font-size: 30px;
+      color:#fff;
+      cursor:pointer;
+      background-color: var(--primary);
+  }
+  .subscribe__form button:hover{
+  padding:6px 18px;
+  transition: all 1s ease-out;
+  background-color: #fff;
+  color:var(--primary);
+  border-radius: 4px;
+  border:2px solid var(--primary)
+  }
+
+  .subscribe__form input{
+    padding:8px 20px;
+    border-radius: 6px;
+
+    font-size: 30px;
+    color:#242222;
+    cursor:pointer;
+    background-color: #fff;
+}
+  
+  .news {
+    background-image: url('./images/web/WEB-News-picture.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -68,17 +158,19 @@
     font-size: 100px;
   }
   
-  .marketing {
-    background-image: url('./images/img-6.jpg');
-    background-position: center;
+  .society {
+    background-image: url('./images/web/WEB-Society-picture.jpg');
+    background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
     font-size: 100px;
+    justify-content: center;
+    align-items: flex-start;
   }
-  
-  .consulting {
-    background-image: url('./images/img-5.jpg');
+
+  .science {
+    background-image: url('./images/web/WEB-Science-picture.jpg');
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -86,17 +178,8 @@
     font-size: 100px;
   }
 
-  .design {
-    background-image: url('./images/img-8.jpg');
-    background-position: bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff;
-    font-size: 100px;
-  }
-
-  .development {
-    background-image: url('./images/img-9.jpg');
+  .criminal {
+    background-image: url('./images/web/WEB-Criminals-picturejpg.jpg');
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -106,15 +189,69 @@
 
   @media screen and (max-width: 960px) {
     .home,
-  .services,
-  .products,
-  .contact-us,
-  .sign-up,
-  .marketing,
-  .consulting,
-  .design,
-  .development {
-  
-    font-size: 50px;
+    .articles,
+    .about,
+    .membership,
+    .contact-us,
+    .subscribe,
+    .news,
+    .society,
+    .science,
+    .criminal {
+
+    justify-content: center;
+   
   }
-    }
+
+  .home__article{
+   /* display: none; */
+   position: fixed;
+   top:12vh;
+   width:80vw;
+   margin:10vh auto;
+   padding: 20px;
+   font-size: 2rem;
+   text-align: center;
+   animation-name: start; 
+   animation-duration: 4s;
+  }
+
+  p{
+    margin:5vh 0 0 0;
+    font-size: 3rem;
+  }
+  .membership p {
+    margin:5vh 0 0 0;
+    font-size: 3rem;
+}
+
+
+.subscribe__form{
+  position: fixed;
+  top:40vh;
+  right:-5vw;
+  width:99vw;
+}
+.subscribe__form button{
+  
+    display: block;
+    border-radius: 20px;
+    margin: 2vh 0 0 0;
+    text-align: center;
+}
+
+.subscribe__form input{
+  padding:10px 10px;
+  border-radius: 20px;
+  font-size: 24px;
+}
+}
+    
+
+  @keyframes start{
+    0%{opacity:0;}
+    40%{opacity:0;}
+    70%{opacity: 0;}
+    100%{opacity:1;}
+
+  }
