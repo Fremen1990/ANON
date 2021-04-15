@@ -21,7 +21,7 @@
     height: 90vh;
     font-size: 3rem;
     animation-name: start; 
-    animation-duration: 2s;
+    animation-duration: 0.7s;
   }
 
 p{
@@ -267,8 +267,7 @@ p{
 
   @keyframes start{
     0%{opacity:0;}
-    40%{opacity:0;}
-    70%{opacity: 0;}
+
     100%{opacity:1;}
 
   }
