@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import Dropdown from "./Dropdown";
 import logo from "../assets/ANON _ Edyta LOGO2 białe kółko - small.png";
-import logoTitle from "../assets/ANON _ Edyta LOGO white small.png";
+import logoTitle from "../assets/ANON _ Edyta LOGO2 białe kółko - small.png";
 
 function Navbar() {
   const [click, setClick] = useState(false);
