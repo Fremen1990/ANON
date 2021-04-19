@@ -65,6 +65,8 @@ p {
   padding: 12px;
   font-size: 1rem;
   text-align: center;
+  color: #fff;
+  font-weight: bold;
 }
 
 .articles {
