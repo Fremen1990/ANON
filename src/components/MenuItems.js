@@ -1,9 +1,9 @@
 export const MenuItems = [
-  {
-    title: "News",
-    path: "/news",
-    cName: "dropdown-link",
-  },
+  // {
+  //   title: "News",
+  //   path: "/news",
+  //   cName: "dropdown-link",
+  // },
 
   {
     title: "Society",

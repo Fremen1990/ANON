@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-import { Button } from "./Button";
+// import { Button } from "./Button";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import Dropdown from "./Dropdown";
-import logo from "../assets/ANON _ Edyta LOGO2 białe kółko - small.png";
-import logoTitle from "../assets/ANON _ Edyta LOGO2 białe kółko - small.png";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -38,10 +36,6 @@ function Navbar() {
   return (
     <>
       <nav className="navbar">
-        <Link to="/" className="navbar-logo">
-          <img className="navbar-logo__title" src={logoTitle} alt="Anon" />
-          <img className="navbar__logo" src={logo} alt="Logo" />
-        </Link>
         <div className="menu-icon" onClick={handleClick}>
           <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
         </div>
@@ -93,7 +87,7 @@ function Navbar() {
             </Link>
           </li>
 
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <Link
               to="/subscribe"
               className="nav-links-mobile"
@@ -101,9 +95,9 @@ function Navbar() {
             >
               Subscribe
             </Link>
-          </li>
+          </li> */}
         </ul>
-        <Button />
+        {/* <Button /> */}
       </nav>
     </>
   );

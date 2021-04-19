@@ -13,11 +13,13 @@ import Society from "./components/pages/Society";
 import Science from "./components/pages/Science";
 import Criminal from "./components/pages/Criminal";
 import Membership from "./components/pages/Membership";
+import { LogoAnon } from "./components/LogoAnon";
 
 function App() {
   return (
     <Router>
       <Navbar />
+
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/articles" exact component={Articles} />
@@ -30,6 +32,7 @@ function App() {
         <Route path="/science" exact component={Science} />
         <Route path="/criminal" exact component={Criminal} />
       </Switch>
+      <LogoAnon />
     </Router>
   );
 }
