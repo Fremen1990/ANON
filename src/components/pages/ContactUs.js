@@ -1,12 +1,13 @@
 import React from "react";
 import "../../App.css";
+import Form from "./ContactForm/Form";
 
 export default function ContactUs() {
   return (
     <>
-      <h1 className="contact-us">
-        <p>Contact us</p>
-      </h1>
+      <section className="contact-us">
+        <Form />
+      </section>
     </>
   );
 }
