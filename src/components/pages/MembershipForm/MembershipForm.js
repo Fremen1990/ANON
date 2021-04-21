@@ -4,7 +4,7 @@ import FormSuccess from "./FormSuccess";
 import "./Form.css";
 import contactUsLeftPicture from "../../../images/web/WEB-ContactUS-left-picture.jpg";
 
-const Form = () => {
+const MembershipForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   function submitForm() {
@@ -15,13 +15,8 @@ const Form = () => {
     <>
       <div className="form-container">
         <span className="close-btn">x</span>
-        <div className="form-content-left">
-          <img
-            src={contactUsLeftPicture}
-            alt="spaceship"
-            className="form-img"
-          />
-        </div>
+
+        {/* <div className="form-content-left"></div> */}
         {!isSubmitted ? (
           <FormSignUp submitForm={submitForm} />
         ) : (
@@ -32,4 +27,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default MembershipForm;

@@ -205,8 +205,8 @@
   .form-content-left {
     /* position: relative; */
     /* top:-50vh; */
-    height: 0;
-    width: 0;
+    height: 100%;
+    width: 100%;
     display: blcok;
     animation-name: rocketStarts;
     animation-duration: 5s;
@@ -268,7 +268,7 @@
   }
 
   .form-inputs {
-    margin-top: 20px;
+    height: 100%;
   }
 
   .form-inputs input {
