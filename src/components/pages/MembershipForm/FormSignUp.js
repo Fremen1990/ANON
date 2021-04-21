@@ -28,34 +28,60 @@ const FormSignUp = ({ submitForm }) => {
       </header>
 
       <div className="form-content-left">
-        <div className="form-inputs">
-          <h3 style={{ fontSize: 14 }}> What would you like to do?</h3>
-          <label className="form-label">
-            Writing an articles <input type="checkbox" className="form-input" />
-          </label>
+        <h3 className="form-content-left__header" style={{ fontSize: 14 }}>
+          {" "}
+          What would you like to do?
+        </h3>
 
-          <label className="form-label">
-            making an investigations{" "}
-            <input type="checkbox" className="form-input" />
-          </label>
+        <ul className="form-inputs">
+          <li className="form-li">
+            <label className="form-label">Writing an articles</label>
+            <input
+              type="checkbox"
+              className="form-content-left__form-inputs__form-li--input"
+            />
+          </li>
 
-          <label className="form-label">
-            helping with organize events/conferencess online{" "}
-            <input type="checkbox" className="form-input" />
-          </label>
+          <li className="form-li">
+            <label className="form-label">making an investigations </label>{" "}
+            <input
+              type="checkbox"
+              className="form-content-left__form-inputs__form-li--input"
+            />
+          </li>
 
-          <label className="form-label">
-            making a relationships with partners{" "}
-            <input type="checkbox" className="form-input" />
-          </label>
+          <li className="form-li">
+            <label className="form-label">
+              helping with organize events/conferencess online{" "}
+            </label>{" "}
+            <input
+              type="checkbox"
+              className="form-content-left__form-inputs__form-li--input"
+            />
+          </li>
 
-          <label className="form-label">
-            inviting people to ANON website{" "}
-            <input type="checkbox" className="form-input" />
-          </label>
+          <li className="form-li">
+            <label className="form-label">
+              making a relationships with partners{" "}
+            </label>{" "}
+            <input
+              type="checkbox"
+              className="form-content-left__form-inputs__form-li--input"
+            />
+          </li>
+
+          <li className="form-li">
+            <label className="form-label">
+              inviting people to ANON website{" "}
+            </label>{" "}
+            <input
+              type="checkbox"
+              className="form-content-left__form-inputs__form-li--input"
+            />
+          </li>
 
           {errors.email && <p className="error-message">{errors.email}</p>}
-        </div>
+        </ul>
       </div>
 
       <div className="form-content-right">
