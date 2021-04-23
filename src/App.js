@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import "./components/styles/main.scss";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -12,7 +13,7 @@ import News from "./components/pages/News";
 import Society from "./components/pages/Society";
 import Science from "./components/pages/Science";
 import Criminal from "./components/pages/Criminal";
-import Membership from "./components/pages/Membership";
+import MembershipMenu from "./components/pages/Membership/MembershipMenu";
 import { LogoAnon } from "./components/LogoAnon";
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
         <Route path="/" exact component={Home} />
         <Route path="/articles" exact component={Articles} />
         <Route path="/about" exact component={About} />
-        <Route path="/membership" exact component={Membership} />
+        <Route path="/membership" exact component={MembershipMenu} />
         <Route path="/contact-us" exact component={ContactUs} />
         <Route path="/subscribe" exact component={Subscribe} />
         <Route path="/news" exact component={News} />

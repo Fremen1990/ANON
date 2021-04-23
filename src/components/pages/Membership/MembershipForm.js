@@ -1,7 +1,7 @@
 import { useState } from "react";
 import FormSignUp from "./FormSignUp";
 import FormSuccess from "./FormSuccess";
-import "./Form.css";
+import "./Form.scss";
 import contactUsLeftPicture from "../../../images/web/WEB-ContactUS-left-picture.jpg";
 
 const MembershipForm = () => {

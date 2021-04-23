@@ -2,12 +2,18 @@
   margin: 20px auto;
   width: 80vw;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
-  position: relative;
+  // position: relative;
   border-radius: 10px;
   height: 90%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  animation: start 2s;
+  // display: grid;
+  // grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  ;
+
+  /* animation: start 2s; */
 }
 
 .close-btn {
@@ -26,6 +32,8 @@
     rgba(39, 176, 255, 0.5) 0%,
     rgba(0, 232, 236, 0.5) 100%
   );
+  height: 100%;
+  width: 50%;
   border-radius: 10px 0 0 10px;
   position: relative;
   left: 0;
@@ -73,6 +81,8 @@
 .form-content-right {
   border-radius: 0 10px 10px 0;
   position: relative;
+  height: 100%;
+  width: 50%;
   background: linear-gradient(
     90deg,
     rgba(40, 40, 40, 0.7) 0%,
@@ -101,23 +111,9 @@
   color: #fff;
 }
 
-.form-content-left__header {
-  margin: 10px 0 0 10px;
-}
-
-.form-li {
-  display: block;
-  list-style-type: none;
-  margin: 20px;
-}
 .form-inputs {
-  /* display: grid;
-  grid-template-areas: "left right"; */
-  display: block;
-  float: left;
   margin-bottom: 0.5rem;
-  width: 400px;
-  height: 400px;
+  width: 80%;
   font-size: 20px;
 }
 
@@ -128,35 +124,19 @@
 }
 
 .form-label {
-  /* grid-area: right; */
   display: inline-block;
-  /* height: 50px; */
   font-size: 0.8rem;
-  /* margin-bottom: 6px; */
-  margin: auto;
+  margin-bottom: 6px;
   color: #fff;
 }
 
 .form-input {
-  /* grid-area: left; */
   display: block;
-  float: left;
+  padding-left: 10px;
   outline: none;
-  border-radius: 4px;
-  height: 20px;
-  width: 20px;
-  padding: 20px;
-  border: none;
-}
-
-.form-content-left__form-inputs__form-li--input {
-  display: block;
-  float: left;
-  outline: none;
-  border-radius: 4px;
-  margin: auto;
-  height: 20px;
-  width: 20px;
+  border-radius: 2px;
+  height: 30px;
+  width: 100%;
   border: none;
 }
 
@@ -235,8 +215,8 @@
   .form-content-left {
     /* position: relative; */
     /* top:-50vh; */
-    height: 100%;
-    width: 100%;
+    height: 0;
+    width: 0;
     display: blcok;
     animation-name: rocketStarts;
     animation-duration: 5s;
@@ -298,7 +278,7 @@
   }
 
   .form-inputs {
-    height: 100%;
+    margin-top: 20px;
   }
 
   .form-inputs input {
