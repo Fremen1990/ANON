@@ -1,5 +1,9 @@
-$default-green: rgb(65,117,6);
-$default-black: rgb(36,34,34);
-$default-white: rgb(255,255,255);
+$default-green: rgb(65, 117, 6);
+$default-black: rgb(36, 34, 34);
+$default-white: rgb(255, 255, 255);
 
-$default-background-color: rgba(28, 27, 27, 0.8);;
+$default-background-color: rgba(28, 27, 27, 0.8);
+
+$default-border-radius: 25px;
+$default-box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),
+  0 7px 20px 0 rgba(0, 0, 0, 0.2);

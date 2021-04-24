@@ -9,8 +9,8 @@ export default function Home() {
         <aside className="home__article">
           <article className="home__article__home">
             {" "}
-            ANIMAL'S NATURE ORGANIZATION NON-PROFIT If you care about animals –
-            join ANON Society, click Membership to see how :)
+            ANIMAL'S NATURE ORGANIZATION NON-PROFIT If you care about animals
+            subscribe . . .
           </article>
 
           <input

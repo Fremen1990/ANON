@@ -3,12 +3,12 @@ import { useState } from "react";
 import React from "react";
 import useForm from "./useForm";
 import validate from "./validateInfo";
-import "./FormSignUp.scss";
+import "./ContactForm.scss";
 
 import contactUsLeftPicture from "../images/web/WEB-ContactUS-left-picture.jpg";
 import contactUsLeftPictureSucceed from "../images/web/WEB-ContactUs-left-succeed-picture.jpg";
 
-export default function FormSignUp() {
+export default function ContactForm() {
   const { handleChange, values, handleSubmit, errors } = useForm(
     submitForm,
     validate

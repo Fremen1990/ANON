@@ -1,18 +1,16 @@
+@import "./styles/animations.scss";
+@import "./styles/variables.scss";
+
 .form-container {
   margin: 20px auto;
   width: 80vw;
-  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
-  // position: relative;
-  border-radius: 10px;
+  box-shadow: $default-box-shadow;
+  border-radius: $default-border-radius;
   height: 90%;
-  // display: grid;
-  // grid-template-columns: 1fr 1fr;
   display: flex;
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
-  ;
-
   /* animation: start 2s; */
 }
 
@@ -37,20 +35,7 @@
   border-radius: 10px 0 0 10px;
   position: relative;
   left: 0;
-  animation: leftContactFoto 2s;
-}
-
-@keyframes leftContactFoto {
-  0% {
-    left: -50vw;
-  }
-
-  50% {
-    left: -50vw;
-  }
-  100% {
-    left: 0;
-  }
+  animation: leftContactFoto 1s;
 }
 
 .form-img {
@@ -104,7 +89,7 @@
 }
 
 .form h1 {
-  font-size: 1rem;
+  font-size: 2rem;
   text-align: start;
   width: 80%;
   margin-bottom: 1rem;
@@ -125,8 +110,8 @@
 
 .form-label {
   display: inline-block;
-  font-size: 0.8rem;
-  margin-bottom: 6px;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
   color: #fff;
 }
 
@@ -230,29 +215,6 @@
     animation-name: formAppear;
     animation-duration: 4s;
     /* animation-timing-function: linear; */
-  }
-
-  @keyframes rocketStarts {
-    0% {
-      display: block;
-      opacity: 0;
-      height: 100vh;
-      width: 100vw;
-    }
-
-    50% {
-      display: block;
-      opacity: 1;
-      height: 100vh;
-      width: 100vw;
-    }
-
-    100% {
-      /* top:-100vh; */
-      height: 0;
-      width: 100vw;
-      display: none;
-    }
   }
 
   @keyframes formAppear {

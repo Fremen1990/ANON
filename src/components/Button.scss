@@ -1,6 +1,5 @@
-:root {
-  --primary: rgb(65, 117, 6);
-}
+@import "./styles/variables.scss";
+
 
 .btn {
   margin-top: 5vh;
@@ -11,7 +10,7 @@
   font-size: 24px;
   color: #fff;
   cursor: pointer;
-  background-color: var(--primary);
+  background-color: $default-green;
 }
 
 .btn:hover {
@@ -20,5 +19,5 @@
   background-color: transparent;
   color: #fff;
   border-radius: 4px;
-  border: 6px solid var(--primary);
+  border: 6px solid $default-green;
 }

@@ -1,10 +1,8 @@
 import React from "react";
 import "../styles/main.scss";
-// import Form from "./ContactForm/Form";
-
-import FormSignUp from "../FormSignUp";
+import ContactForm from "../ContactForm";
 import FormSuccess from "../FormSuccess";
-import "../FormSignUp.scss";
+import "../ContactForm.scss";
 
 export default function ContactUs({ isSubmitted, submitForm }) {
   console.log(isSubmitted);
@@ -15,7 +13,7 @@ export default function ContactUs({ isSubmitted, submitForm }) {
           <span className="close-btn">x</span>
 
           {!isSubmitted ? (
-            <FormSignUp submitForm={submitForm} />
+            <ContactForm submitForm={submitForm} />
           ) : (
             <FormSuccess />
           )}
