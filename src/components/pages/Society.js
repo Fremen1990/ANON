@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../../App.css";
+import "../styles/main.scss";
 
 export default function Society() {
   return (

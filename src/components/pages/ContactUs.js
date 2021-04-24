@@ -1,12 +1,25 @@
 import React from "react";
-import "../../App.css";
-import Form from "./ContactForm/Form";
+import "../styles/main.scss";
+// import Form from "./ContactForm/Form";
 
-export default function ContactUs() {
+import FormSignUp from "../FormSignUp";
+import FormSuccess from "../FormSuccess";
+import "../FormSignUp.scss";
+
+export default function ContactUs({ isSubmitted, submitForm }) {
+  console.log(isSubmitted);
   return (
     <>
       <section className="contact-us">
-        <Form />
+        <div className="form-container">
+          <span className="close-btn">x</span>
+
+          {!isSubmitted ? (
+            <FormSignUp submitForm={submitForm} />
+          ) : (
+            <FormSuccess />
+          )}
+        </div>
       </section>
     </>
   );

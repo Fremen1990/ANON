@@ -1,5 +1,5 @@
 import React from "react";
-import "./Logo.css";
+import "./LogoAnon.scss";
 import logo from "../assets/ANON _ Edyta LOGO2 białe kółko - small.png";
 import { Link } from "react-router-dom";
 

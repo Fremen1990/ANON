@@ -2,7 +2,7 @@ import { useState } from "react";
 import FormSignUp from "./FormSignUp";
 import FormSuccess from "./FormSuccess";
 import "./Form.scss";
-import contactUsLeftPicture from "../../../images/web/WEB-ContactUS-left-picture.jpg";
+// import contactUsLeftPicture from "../../../images/web/WEB-ContactUS-left-picture.jpg";
 
 const MembershipForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);

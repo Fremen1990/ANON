@@ -1,0 +1,75 @@
+
+@media screen and (max-width: 960px) {
+    .home,
+    .articles,
+    .about,
+    .membership,
+    .contact-us,
+    .subscribe,
+    .news,
+    .society,
+    .science,
+    .criminal {
+      justify-content: center;
+    }
+  
+    .home {
+      background-image: url("../../images/mobile/MOBILE-Home-picture.jpg");
+    }
+    .articles {
+      background-image: ur("../../images/mobile/MOBILE-Articles-picture.jpg");
+    }
+    .about {
+      background-image: url("../../images/mobile/MOBILE-About-picture.jpg");
+    }
+    .membership {
+      background-image: url("../../images/mobile/MOBILE-Membership-picture.jpg");
+    }
+    .contact-us {
+      background-image: url("../../images/mobile/MOBILE-ContactUs-picture2.jpg");
+    }
+    .subscribe {
+      background-image: url("../../images/mobile/MOBILE-Subscribe-picture.jpg");
+    }
+  
+    .home__article {
+      /* display: none; */
+      position: fixed;
+      top: 12vh;
+      width: 80vw;
+      margin: 10vh auto;
+      padding: 20px;
+      font-size: 2rem;
+      text-align: center;
+      animation-name: start;
+      animation-duration: 4s;
+    }
+  
+    p {
+      margin: 5vh 0 0 0;
+      font-size: 3rem;
+    }
+    .membership p {
+      margin: 5vh 0 0 0;
+      font-size: 3rem;
+    }
+  
+    .subscribe__form {
+      position: fixed;
+      top: 40vh;
+      right: -5vw;
+      width: 99vw;
+    }
+    .subscribe__form button {
+      display: block;
+      border-radius: 20px;
+      margin: 2vh 0 0 0;
+      text-align: center;
+    }
+  
+    .subscribe__form input {
+      padding: 10px 10px;
+      border-radius: 20px;
+      font-size: 24px;
+    }
+  }

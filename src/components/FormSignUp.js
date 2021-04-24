@@ -1,16 +1,43 @@
+import { useState } from "react";
+
 import React from "react";
 import useForm from "./useForm";
 import validate from "./validateInfo";
-import "./Form.scss";
+import "./FormSignUp.scss";
 
-const FormSignUp = ({ submitForm }) => {
+import contactUsLeftPicture from "../images/web/WEB-ContactUS-left-picture.jpg";
+import contactUsLeftPictureSucceed from "../images/web/WEB-ContactUs-left-succeed-picture.jpg";
+
+export default function FormSignUp() {
   const { handleChange, values, handleSubmit, errors } = useForm(
     submitForm,
     validate
   );
 
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  function submitForm() {
+    setIsSubmitted(true);
+  }
+
   return (
     <>
+      <div className="form-content-left">
+        {!isSubmitted ? (
+          <img
+            src={contactUsLeftPicture}
+            alt="spaceship"
+            className="form-img"
+          />
+        ) : (
+          <img
+            src={contactUsLeftPictureSucceed}
+            alt="Form succeed"
+            className="form-img"
+          />
+        )}
+      </div>
+
       <div className="form-content-right">
         <form className="form" onSubmit={handleSubmit}>
           <h1>Contact us!!</h1>
@@ -63,15 +90,6 @@ const FormSignUp = ({ submitForm }) => {
               rows="10"
             ></textarea>
 
-            {/* <input
-              id="password2"
-              type="text"
-              className="form-input-message"
-              name="password2"
-              placeholder="Enter your message"
-              value={values.password2}
-              onChange={handleChange}
-            /> */}
             {errors.message && (
               <p className="error-message">{errors.message}</p>
             )}
@@ -83,6 +101,4 @@ const FormSignUp = ({ submitForm }) => {
       </div>
     </>
   );
-};
-
-export default FormSignUp;
+}
