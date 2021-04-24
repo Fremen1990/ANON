@@ -57,7 +57,7 @@ const FormSignUp = ({ submitForm }) => {
 
               <textarea
                 style={{ height: 50 }}
-                className="form-container__form-input-message"
+                className="form-input-message"
                 name="message"
                 id="message"
                 placeholder="Enter your story"
@@ -79,7 +79,7 @@ const FormSignUp = ({ submitForm }) => {
 
               <textarea
                 style={{ height: 50 }}
-                className="form-container__form-input-message"
+                className="form-input-message"
                 name="message"
                 id="message"
                 placeholder="Tell me why..."

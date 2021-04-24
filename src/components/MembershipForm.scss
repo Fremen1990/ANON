@@ -2,7 +2,7 @@
 @import "/src/components/styles/base.scss";
 
 .membership-form-container {
-  height: 90vh;
+  height: 85vh;
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -11,7 +11,8 @@
   text-align: center;
   background-color: $default-background-color;
   border-radius: $default-border-radius;
-  margin-top: 5vh;
+  box-shadow: $default-box-shadow;
+  margin-top: 2.5vh;
   font-size: 16px;
 
   .form-containter__header {
@@ -33,16 +34,55 @@
   .form-container__form {
     display: flex;
     flex-direction: row;
+    width: 100%;
 
     .form-container__left-form {
       width: 50%;
-      background-color: green;
+      flex-direction: column;
+      background-color: rgba(65, 117, 6, 0.7);
+      border-radius: $default-border-radius;
+      box-shadow: $default-box-shadow;
+
+      .form-container__form-inputs {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+
+        .form-label {
+          display: inline-block;
+          font-size: 1.2rem;
+          margin-bottom: 10px;
+
+          color: #fff;
+        }
+
+        .form-container__input {
+          display: block;
+          padding-left: 10px;
+          outline: none;
+          border-radius: 2px;
+          height: 30px;
+          width: 100%;
+          border: none;
+        }
+
+        .form-input-message {
+          /* display: flex; */
+          display: block;
+          padding-left: 10px;
+          outline: none;
+          border-radius: 2px;
+          min-height: 80px;
+          width: 100%;
+          border: none;
+        }
+      }
     }
 
     .form-container__right-form {
       width: 50%;
       flex-direction: row;
-      background: blue;
+      background: $default-black;
 
       .form-container__form-inputs {
         display: flex;
