@@ -5,7 +5,7 @@ const useForm = (callback, validate) => {
     name: "",
     email: "",
     message: "",
-    isSubmitting: false,
+    // isSubmitting: "",
   });
 
   const [errors, setErrors] = useState({});
@@ -24,7 +24,6 @@ const useForm = (callback, validate) => {
     e.preventDefault();
     setErrors(validate(values));
     setIsSubmitting(true);
-    console.log(isSubmitting);
   };
 
   useEffect(() => {

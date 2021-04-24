@@ -11,7 +11,11 @@
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
-  /* animation: start 2s; */
+  animation: start 2s;
+}
+
+.contactFormGoogle {
+  transition: all 1s ease-out;
 }
 
 .close-btn {

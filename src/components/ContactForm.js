@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 
 import React from "react";
 import useForm from "./useForm";
@@ -8,17 +8,11 @@ import "./ContactForm.scss";
 import contactUsLeftPicture from "../images/web/WEB-ContactUS-left-picture.jpg";
 import contactUsLeftPictureSucceed from "../images/web/WEB-ContactUs-left-succeed-picture.jpg";
 
-export default function ContactForm() {
+export default function ContactForm({ submitForm, isSubmitted }) {
   const { handleChange, values, handleSubmit, errors } = useForm(
     submitForm,
     validate
   );
-
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
-  function submitForm() {
-    setIsSubmitted(true);
-  }
 
   return (
     <>
@@ -39,13 +33,33 @@ export default function ContactForm() {
       </div>
 
       <div className="form-content-right">
-        <form className="form" onSubmit={handleSubmit}>
+        <iframe
+          className="contactFormGoogle"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSepyxTr0f09xKPBNDl6XMlvQJ-HGO7HNll89AcmVIHw59fgLQ/viewform?embedded=true"
+          width="100%"
+          height="100%"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+        >
+          Ładuję…
+        </iframe>
+
+        {/* <form
+          action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSepyxTr0f09xKPBNDl6XMlvQJ-HGO7HNll89AcmVIHw59fgLQ/formResponse?edit2=2_ABaOnudsN9CtHlNqqyP76ArJs3sJgYcBq4W4lllCZytyctu1xExTtpUyEJ1g6z_jhQ"
+          target="_self"
+          method="POST"
+          id="mG61Hd"
+          className="form"
+          onSubmit={handleSubmit}
+        >
           <h1>Contact us!!</h1>
           <div className="form-inputs">
             <label htmlFor="name" className="form-label">
               Name:
             </label>
             <input
+              jsname="YPqjbf"
               id="name"
               type="text"
               className="form-input"
@@ -63,6 +77,7 @@ export default function ContactForm() {
               Email:
             </label>
             <input
+              jsname="YPqjbf"
               id="email"
               type="email"
               className="form-input"
@@ -81,6 +96,7 @@ export default function ContactForm() {
 
             <textarea
               className="form-input-message"
+              jsname="YPqjbf"
               name="message"
               id="message"
               placeholder="Enter your message"
@@ -95,9 +111,9 @@ export default function ContactForm() {
             )}
           </div>
           <button className="form-input-btn" type="submit">
-            Sign Up!
+            Send
           </button>
-        </form>
+        </form> */}
       </div>
     </>
   );

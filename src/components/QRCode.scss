@@ -1,0 +1,20 @@
+@import "./styles/variables.scss";
+@import "/src/components/styles/base.scss";
+@import "/src/components/styles/animations.scss";
+
+.QRCode-container {
+  height: 130px;
+  width: 130px;
+  margin: 15px;
+  background-color: $default-white;
+  position: absolute;
+  bottom: 0;
+
+  animation-name: start;
+  animation-duration: 2s;
+
+  .QRCodePicture {
+    height: 100%;
+    width: 100%;
+  }
+}

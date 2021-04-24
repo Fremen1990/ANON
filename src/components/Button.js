@@ -5,7 +5,9 @@ import { Link } from "react-router-dom";
 export function Button() {
   return (
     <Link to="subscribe">
-      <button className="btn">Subscribe!</button>
+      <button className="btn" type="submit">
+        Subscribe!
+      </button>
     </Link>
   );
 }

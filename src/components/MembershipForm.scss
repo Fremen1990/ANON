@@ -1,5 +1,11 @@
 @import "./styles/variables.scss";
 @import "/src/components/styles/base.scss";
+@import "/src/components/styles/animations.scss";
+
+.MembershipFormGoogle {
+  animation-name: start;
+  animation-duration: 2s;
+}
 
 .membership-form-container {
   height: 85vh;
