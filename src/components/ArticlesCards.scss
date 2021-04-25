@@ -68,25 +68,28 @@
   }
 }
 
+.article-card__Society:hover,
+.article-card__Science:hover,
 .article-card__Criminal:hover {
   height: 90%;
-  box-shadow: $default-box-shadow;
-  border: 10px solid $default-green;
+  box-shadow: 0 0 20px 5px white;
+  border: 10px solid rgba(65, 117, 6, 0.5);
   border-radius: 25px;
 }
 
-.article-card__Society:hover {
-  height: 90%;
-  box-shadow: $default-box-shadow;
-  border: 10px solid $default-green;
-  border-radius: 25px;
-}
-.article-card__Science:hover {
-  height: 90%;
-  box-shadow: $default-box-shadow;
-  border: 10px solid $default-green;
-  border-radius: 25px;
-}
+// .article-card__Science:hover {
+//   height: 90%;
+//   box-shadow: $default-box-shadow;
+//   border: 10px solid $default-green;
+//   border-radius: 25px;
+// }
+
+// .article-card__Criminal:hover {
+//   height: 90%;
+//   box-shadow: $default-box-shadow;
+//   border: 10px solid $default-green;
+//   border-radius: 25px;
+// }
 
 .article-card__Society {
   animation-name: leftArticleSociety;

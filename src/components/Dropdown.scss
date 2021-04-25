@@ -1,32 +1,33 @@
 @import "./styles/variables.scss";
 
-.dropdown-menu{
-    width:200px;
-    position: absolute;
-    top:10vh;
-    list-style: none;
-    text-align: start;
+.dropdown-menu {
+  width: 200px;
+  position: absolute;
+  top: 10vh;
+  list-style: none;
+  text-align: start;
+  z-index: 99;
 }
 
-.dropdown-menu li{
-    background: $default-green;
-    cursor: pointer;
+.dropdown-menu li {
+  background: $default-green;
+  cursor: pointer;
 }
 
-.dropdown-menu li:hover{
-    background: rgb(17, 214, 60);
-    color:$default-black;
+.dropdown-menu li:hover {
+  background: rgb(17, 214, 60);
+  color: $default-black;
 }
 
-.dropdown-menu.clicked{
-    display: none;
+.dropdown-menu.clicked {
+  display: none;
 }
 
-.dropdown-link{
-    display: block;
-width: 100%;
-height: 100%;
-text-decoration: none;
-color:$default-white;
-padding: 16px;
+.dropdown-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: $default-white;
+  padding: 16px;
 }
