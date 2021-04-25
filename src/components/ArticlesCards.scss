@@ -1,0 +1,130 @@
+@import "./styles/variables.scss";
+@import "./styles/base.scss";
+
+.site-container {
+  font-size: 16px;
+  height: 80vh;
+  width: 80vw;
+  background: $default-background-color;
+  border-radius: $default-border-radius;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    font-size: 16px;
+    height: 80vh;
+    width: 80vw;
+    background: $default-background-color;
+    border-radius: $default-border-radius;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .article-card__Society,
+  .article-card__Science,
+  .article-card__Criminal {
+    height: 80%;
+    width: 30%;
+    margin: 3vw;
+    cursor: pointer;
+    transition: all ease 0.4s;
+    position: relative;
+
+    .article-image {
+      overflow: hidden;
+    }
+    .article-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 20px 20px 0 0;
+    }
+
+    .article-content {
+      //   height: 100%;
+
+      background: $default-navigation-color;
+      border-radius: 0 0 20px 20px;
+
+      .card-category {
+        display: block;
+        color: $default-green;
+        font-size: 24px;
+        padding: 30px 0 0 30px;
+      }
+
+      .class-title {
+        display: block;
+        margin: 30px 0 0 30px;
+      }
+
+      .card-excerpt {
+        display: block;
+        font-size: 17px;
+        margin: 0 0 0 0;
+      }
+    }
+  }
+}
+
+.article-card__Criminal:hover {
+  height: 90%;
+  box-shadow: $default-box-shadow;
+  border: 10px solid $default-green;
+  border-radius: 25px;
+}
+
+.article-card__Society:hover {
+  height: 90%;
+  box-shadow: $default-box-shadow;
+  border: 10px solid $default-green;
+  border-radius: 25px;
+}
+.article-card__Science:hover {
+  height: 90%;
+  box-shadow: $default-box-shadow;
+  border: 10px solid $default-green;
+  border-radius: 25px;
+}
+
+.article-card__Society {
+  animation-name: leftArticleSociety;
+  animation-duration: 2s;
+}
+
+.article-card__Science {
+  animation-name: bottomArticleScience;
+  animation-duration: 2s;
+}
+.article-card__Criminal {
+  animation-name: rightArticleCriminal;
+  animation-duration: 2s;
+}
+
+@keyframes leftArticleSociety {
+  0% {
+    left: -50vw;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes bottomArticleScience {
+  0% {
+    bottom: -100vh;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@keyframes rightArticleCriminal {
+  0% {
+    right: -50vw;
+  }
+  100% {
+    right: 0;
+  }
+}
