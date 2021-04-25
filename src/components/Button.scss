@@ -1,6 +1,5 @@
 @import "./styles/variables.scss";
 
-
 .btn {
   margin-top: 5vh;
   padding: 8px 20px;
@@ -20,4 +19,19 @@
   color: #fff;
   border-radius: 4px;
   border: 6px solid $default-green;
+}
+
+@media screen and (max-width: 960px) {
+  .btn {
+    display: flex;
+    margin-top: 5vh;
+    padding: 8px 20px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    background-color: $default-green;
+  }
 }

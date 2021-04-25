@@ -17,8 +17,6 @@
   animation-duration: 0.5s;
 }
 
-
-
 .nav-menu {
   display: grid;
   grid-template-columns: repeat(6, auto);
@@ -81,7 +79,8 @@
   }
 
   .nav-menu.active {
-    background: #242222;
+    background: $default-navigation-color;
+    top: 10vh;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
