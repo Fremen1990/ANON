@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/main.scss";
+// import "../styles/main.scss";
 import sign from "../../assets/ANON _ Edyta LOGO white small sign.png";
 import creatorFoto from "../../assets/about/na stronę do About.png";
 
