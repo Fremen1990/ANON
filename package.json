@@ -1,6 +1,7 @@
 {
   "name": "react-dropdown-navbar-responsive",
   "version": "0.1.0",
+  "homepage": ".",
   "private": true,
   "engines": {
     "node": "12.x"

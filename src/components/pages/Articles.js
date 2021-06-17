@@ -6,8 +6,8 @@ export default function Articles() {
   return (
     <>
       <h1 className="articles">
-        {/* <p>Articles</p> */}
         <ArticlesCards />
+        {/* <p>Articles</p> */}
       </h1>
     </>
   );
