@@ -3,12 +3,14 @@
 @import "/src/components/styles/animations.scss";
 
 .QRCode-container {
-  height: 130px;
-  width: 130px;
-  margin: 15px;
+  position: fixed;
+  left: 50vw;
+  transform: translate(-50%);
+  bottom: 5vh;
+  height: 22vh;
+  width: 22vh;
+  margin: auto;
   background-color: $default-white;
-  position: absolute;
-  bottom: 0;
 
   animation-name: start;
   animation-duration: 2s;

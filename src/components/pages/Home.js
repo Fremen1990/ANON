@@ -6,10 +6,10 @@ import { QRCode } from "../QRCode";
 export default function Home() {
   return (
     <>
-      <h1 className="home">
-        <aside className="home__article">
+      <div className="container home">
+        <section className="home__article">
           <form action="submit" className="home__subscribeForm">
-            <article className="home__article__home">
+            <article className="home__article__text">
               {" "}
               ANIMAL'S NATURE ORGANIZATION NON-PROFIT If you care about animals
               subscribe . . .
@@ -21,9 +21,9 @@ export default function Home() {
             />
             <Button />
           </form>
-        </aside>
+        </section>
         <QRCode />
-      </h1>
+      </div>
     </>
   );
 }

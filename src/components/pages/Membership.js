@@ -1,5 +1,5 @@
 import React from "react";
-import "../../App.css";
+import "../../App.scss";
 // import MembershipForm from "../MembershipForm";
 import MembershipFormGoogle from "../MembershipFormGoogle";
 
