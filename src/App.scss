@@ -10,22 +10,33 @@
 // X-Small	None	<576px
 .home {
   background-image: url("./images/mobile/MOBILE-Home-picture.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 90vh;
   animation-name: start;
   animation-duration: 0.7s;
 
   .home__article {
-    /* display: none; */
-    // position: fixed;
+    background: rgba(28, 27, 27, 0.5);
+    border-radius: 20px;
+    width: 25vw;
+    margin-top: 8vh;
+    padding: 20px;
+    line-height: 2.2rem;
+    text-align: center;
+
     align-items: center;
     top: 12vh;
     width: 90vw;
     height: 70vh;
     font-size: 1.2rem;
     animation-name: start;
-    animation-duration: 4s;
+    animation-duration: 2.5s;
 
     .home__subscribeForm {
       display: flex;
@@ -41,8 +52,12 @@
 // Small	sm	≥576px
 @media (min-width: 576px) {
   .home {
+    background-image: url("./images/web/WEB-Home-picture.jpeg");
+    justify-content: center;
+    align-items: center;
+
     .home__article {
-      margin: auto;
+      // margin: auto;
       width: 80vw;
       font-size: 1.4rem;
 
@@ -60,38 +75,76 @@
 
 // Medium	md	≥768px
 @media (min-width: 768px) {
+  .home {
+    flex-direction: row-reverse;
+    justify-content: right;
+    align-items: flex-start;
+    .home__article {
+      // margin: auto;
+      width: 25vw;
+      font-size: 1.2rem;
+      .home__subscribeForm {
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+        .home__article-input {
+          margin: 4vh 0 4vh 0;
+        }
+      }
+    }
+  }
 }
 
 // Large	lg	≥992px
 @media (min-width: 922px) {
+  .home {
+    .home__article {
+      width: 25vw;
+      max-height: 50vh;
+      font-size: 1.4rem;
+    }
+  }
 }
 
 // Extra large	xl	≥1200px
 @media (min-width: 1200px) {
+  .home {
+    .home__article {
+      max-height: 60vh;
+      padding: 30px;
+
+      font-size: 1.7rem;
+
+      .home__subscribeForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .home__article-input {
+          margin: 4vh 0 4vh 0;
+        }
+      }
+    }
+  }
 }
 
-// Extra extra large	xxl	≥1400px
-@media (min-width: 1200px) {
-}
-
-.home,
-.articles,
-.about,
-.membership,
-.contact-us,
-.subscribe,
-.news,
-.society,
-.science,
-.criminal {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 90vh;
-  font-size: 3rem;
-  animation-name: start;
-  animation-duration: 0.7s;
-}
+// .home,
+// .articles,
+// .about,
+// .membership,
+// .contact-us,
+// .subscribe,
+// .news,
+// .society,
+// .science,
+// .criminal {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   height: 90vh;
+//   font-size: 3rem;
+//   animation-name: start;
+//   animation-duration: 0.7s;
+// }
 
 p {
   margin: 30px 0 0 30px;
@@ -101,31 +154,31 @@ p {
   font-size: 4rem;
 }
 
-.home {
-  background-image: url("./images/web/WEB-Home-picture.jpeg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-  flex-direction: row-reverse;
-  justify-content: right;
-  align-items: flex-start;
-}
+// .home {
+//   background-image: url("./images/web/WEB-Home-picture.jpeg");
+//   background-position: center;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   color: #fff;
+//   font-size: 100px;
+//   flex-direction: row-reverse;
+//   justify-content: right;
+//   align-items: flex-start;
+// }
 
-.home__article {
-  background: rgba(28, 27, 27, 0.5);
-  border-radius: 20px;
-  width: 25vw;
-  margin-right: 5vw;
-  margin-top: 8vh;
-  padding: 20px;
-  font-size: 1.4rem;
-  line-height: 2.2rem;
-  text-align: center;
-  animation-name: start;
-  animation-duration: 3s;
-}
+// .home__article {
+//   background: rgba(28, 27, 27, 0.5);
+//   border-radius: 20px;
+//   width: 25vw;
+//   margin-right: 5vw;
+//   margin-top: 8vh;
+//   padding: 20px;
+//   font-size: 1.4rem;
+//   line-height: 2.2rem;
+//   text-align: center;
+//   animation-name: start;
+//   animation-duration: 3s;
+// }
 
 .home__article-input {
   max-width: 100%;

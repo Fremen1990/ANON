@@ -3,21 +3,23 @@
 .btn {
   // margin-top: 5vh;
   padding: 8px 20px;
-  border-radius: 10px;
+  border-radius: 6px;
   outline: none;
   border: none;
   font-size: 24px;
   color: #fff;
   cursor: pointer;
   background-color: $default-green;
+  transition: all 0.5s ease-out;
 }
 
 .btn:hover {
-  padding: 8px 18px;
-  transition: all 0.3s ease-out;
+  // padding: 10px 22px;
+  transition: all 0.5s ease-out;
   background-color: transparent;
   color: #fff;
-  border-radius: 4px;
+  // font-weight: bold;
+  border-radius: 12px;
   border: 6px solid $default-green;
 }
 
@@ -33,5 +35,15 @@
     color: #fff;
     cursor: pointer;
     background-color: $default-green;
+  }
+}
+
+@media (min-width: 1200px) {
+  .btn {
+    // margin-top: 5vh;
+    padding: 14px 28px;
+    border-radius: 30px;
+
+    font-size: 30px;
   }
 }

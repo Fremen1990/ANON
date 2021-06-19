@@ -1,12 +1,12 @@
 import React from "react";
 import "../styles/main.scss";
 import { Button } from "../Button";
-import { QRCode } from "../QRCode";
+import QRCode from "../QRCode";
 
 export default function Home() {
   return (
     <>
-      <div className="container home">
+      <div className="home">
         <section className="home__article">
           <form action="submit" className="home__subscribeForm">
             <article className="home__article__text">
@@ -22,7 +22,7 @@ export default function Home() {
             <Button />
           </form>
         </section>
-        <QRCode />
+        <QRCode className="q-code" />
       </div>
     </>
   );
