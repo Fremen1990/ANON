@@ -39,55 +39,61 @@ function Navbar() {
         <div className="menu-icon" onClick={handleClick}>
           <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
         </div>
-        <ul className={click ? "nav-menu active" : "nav-menu"}>
-          <li className="nav-item">
-            <Link to="/" className="nav-links" onClick={closeMobileMenu}>
-              Home
-            </Link>
-          </li>
 
-          <li
-            className="nav-item"
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
-          >
-            <Link
-              to="/articles"
-              className="nav-links"
-              onClick={closeMobileMenu}
+        <div
+          className={
+            click ? "nav-menu__container active" : "nav-menu__container"
+          }
+        >
+          <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <li className="nav-item">
+              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                Home
+              </Link>
+            </li>
+
+            <li
+              className="nav-item"
+              onMouseEnter={onMouseEnter}
+              onMouseLeave={onMouseLeave}
             >
-              Articles <i className="fas fa-caret-down" />
-            </Link>
-            {dropdown && <Dropdown />}
-          </li>
+              <Link
+                to="/articles"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                Articles <i className="fas fa-caret-down" />
+              </Link>
+              {dropdown && <Dropdown />}
+            </li>
 
-          <li className="nav-item">
-            <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
-              About
-            </Link>
-          </li>
+            <li className="nav-item">
+              <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
+                About
+              </Link>
+            </li>
 
-          <li className="nav-item">
-            <Link
-              to="/membership"
-              className="nav-links"
-              onClick={closeMobileMenu}
-            >
-              Membership
-            </Link>
-          </li>
+            <li className="nav-item">
+              <Link
+                to="/membership"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                Membership
+              </Link>
+            </li>
 
-          <li className="nav-item">
-            <Link
-              to="/contact-us"
-              className="nav-links"
-              onClick={closeMobileMenu}
-            >
-              Contact Us
-            </Link>
-          </li>
+            <li className="nav-item">
+              <Link
+                to="/contact-us"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                Contact Us
+              </Link>
+            </li>
 
-          {/* <li className="nav-item">
+            {/* <li className="nav-item">
             <Link
               to="/subscribe"
               className="nav-links-mobile"
@@ -96,7 +102,9 @@ function Navbar() {
               Subscribe
             </Link>
           </li> */}
-        </ul>
+          </ul>
+        </div>
+
         {/* <Button /> */}
       </nav>
     </>

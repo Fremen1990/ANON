@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/main.scss";
 import { Button } from "../Button";
-import QRCode from "../QRCode";
+// import QRCode from "../QRCode";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
             <article className="home__article__text">
               {" "}
               ANIMAL'S NATURE ORGANIZATION NON-PROFIT If you care about animals
-              subscribe . . .
+              subscribe
             </article>
             <input
               className="home__article-input"
@@ -22,7 +22,7 @@ export default function Home() {
             <Button />
           </form>
         </section>
-        <QRCode className="q-code" />
+        {/* <QRCode className="q-code" /> */}
       </div>
     </>
   );

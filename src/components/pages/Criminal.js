@@ -4,9 +4,9 @@ import "../styles/main.scss";
 export default function Criminal() {
   return (
     <>
-      <h1 className="criminal">
-        <p>Criminal</p>
-      </h1>
+      <div className="criminal">
+        <h2>Criminal</h2>
+      </div>
     </>
   );
 }

@@ -4,9 +4,9 @@ import "../styles/main.scss";
 export default function Science() {
   return (
     <>
-      <h1 className="science">
-        <p>Science</p>
-      </h1>
+      <div className="science">
+        <h2>Science</h2>
+      </div>
     </>
   );
 }

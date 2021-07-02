@@ -16,7 +16,11 @@ import Criminal from "./components/pages/Criminal";
 import Membership from "./components/pages/Membership";
 import { LogoAnon } from "./components/LogoAnon";
 
+import CookieBot from "react-cookiebot";
+
 function App() {
+  const domainGroupId = "8dc9fd98-57eb-434c-813e-609e2aac3667";
+
   return (
     <Router>
       <Navbar />
@@ -34,6 +38,8 @@ function App() {
         <Route path="/criminal" exact component={Criminal} />
       </Switch>
       <LogoAnon />
+
+      <CookieBot domainGroupId={domainGroupId} />
     </Router>
   );
 }

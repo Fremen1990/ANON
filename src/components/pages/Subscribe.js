@@ -4,11 +4,11 @@ import "../styles/main.scss";
 export default function Subscribe() {
   return (
     <>
-      <h1 className="subscribe">
-        <p>
+      <div className="subscribe">
+        <h2>
           Thanks a lot!! <br />
           Subscribed !{" "}
-        </p>
+        </h2>
 
         {/* <form className="subscribe__form" action="submit">
           <input
@@ -18,7 +18,7 @@ export default function Subscribe() {
           />
           <button>Subscibe now!</button>
         </form> */}
-      </h1>
+      </div>
     </>
   );
 }

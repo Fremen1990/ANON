@@ -80,13 +80,15 @@
 
   .nav-menu.active {
     background: $default-navigation-color;
+    top: 20vh;
+    left: 0;
+    justify-content: center;
     top: 10vh;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
   }
-
   .nav-links {
     text-align: center;
     padding: 2rem;
