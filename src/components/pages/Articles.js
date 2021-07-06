@@ -5,10 +5,10 @@ import ArticlesCards from "../ArticlesCards";
 export default function Articles() {
   return (
     <>
-      <h1 className="articles">
+      <div className="articles">
         <ArticlesCards />
         {/* <p>Articles</p> */}
-      </h1>
+      </div>
     </>
   );
 }

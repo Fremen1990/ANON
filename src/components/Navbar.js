@@ -47,7 +47,11 @@ function Navbar() {
         >
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+              <Link
+                to="/"
+                className="nav-links text-white"
+                onClick={closeMobileMenu}
+              >
                 Home
               </Link>
             </li>
@@ -59,7 +63,7 @@ function Navbar() {
             >
               <Link
                 to="/articles"
-                className="nav-links"
+                className="nav-links text-white"
                 onClick={closeMobileMenu}
               >
                 Articles <i className="fas fa-caret-down" />
@@ -68,7 +72,11 @@ function Navbar() {
             </li>
 
             <li className="nav-item">
-              <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
+              <Link
+                to="/about"
+                className="nav-links text-white"
+                onClick={closeMobileMenu}
+              >
                 About
               </Link>
             </li>
@@ -76,7 +84,7 @@ function Navbar() {
             <li className="nav-item">
               <Link
                 to="/membership"
-                className="nav-links"
+                className="nav-links text-white"
                 onClick={closeMobileMenu}
               >
                 Membership
@@ -86,7 +94,7 @@ function Navbar() {
             <li className="nav-item">
               <Link
                 to="/contact-us"
-                className="nav-links"
+                className="nav-links text-white"
                 onClick={closeMobileMenu}
               >
                 Contact Us

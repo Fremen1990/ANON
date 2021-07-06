@@ -14,8 +14,8 @@ export default function ContactUs() {
 
   return (
     <>
-      <section className="contact-us">
-        <div className="form-container">
+      <div className="contact-us">
+        <div className="form-container mt-0">
           {/* <span className="close-btn">x</span> */}
 
           {!isSubmitted ? (
@@ -24,7 +24,7 @@ export default function ContactUs() {
             <FormSuccess />
           )}
         </div>
-      </section>
+      </div>
     </>
   );
 }
