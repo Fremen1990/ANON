@@ -16,6 +16,9 @@ import Criminal from "./components/pages/Criminal";
 import Membership from "./components/pages/Membership";
 import { LogoAnon } from "./components/LogoAnon";
 
+import Article from "./components/pages/Articles/Science/Article";
+import ArticleSociety from "./components/pages/Articles/Society/ArticleSociety";
+
 import CookieBot from "react-cookiebot";
 
 function App() {
@@ -34,7 +37,9 @@ function App() {
         <Route path="/subscribe" exact component={Subscribe} />
         <Route path="/news" exact component={News} />
         <Route path="/society" exact component={Society} />
+        <Route path="/society/article" exact component={ArticleSociety} />
         <Route path="/science" exact component={Science} />
+        <Route path="/science/article" exact component={Article} />
         <Route path="/criminal" exact component={Criminal} />
       </Switch>
       <LogoAnon />

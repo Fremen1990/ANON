@@ -13,18 +13,21 @@ export default function MembershipMenu() {
             <a
               className="col-4 text-center"
               href="../../assets/Membership/ANON STATUTE.pdf"
+              download
             >
               Anon Statute
             </a>
             <a
               className="col-4 text-center"
               href="../../assets/Membership/ANON STATUTE.pdf"
+              download
             >
               Anon Statute
             </a>
             <a
               className="col-4 text-center"
               href="../../assets/Membership/ANON STATUTE.pdf"
+              download
             >
               Anon Statute
             </a>
