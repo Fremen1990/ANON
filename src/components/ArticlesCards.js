@@ -15,7 +15,7 @@ export default function ArticlesCard() {
       {/* <div className="d-grid m-auto h-100"> */}
       <div className="container">
         <div className="row">
-          <div className="card-deck">
+          <div className="card-deck justify-content-center align-items-center">
             <Link
               to="/society"
               // className="article-card__Society"

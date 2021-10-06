@@ -5,7 +5,7 @@ import ContactForm from "../ContactForm";
 import FormSuccess from "../FormSuccess";
 import "../ContactForm.scss";
 
-export default function ContactUs() {
+export default function JoinUs() {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   function submitForm() {
@@ -14,7 +14,7 @@ export default function ContactUs() {
 
   return (
     <>
-      <div className="contact-us">
+      <div className="contact-us-container">
         <div className="form-container mt-0">
           {/* <span className="close-btn">x</span> */}
 
