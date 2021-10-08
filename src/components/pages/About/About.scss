@@ -1,0 +1,26 @@
+.about-container{
+  display:flex;
+  justify-content:center;
+  height:75vh;
+
+}
+
+.about-content-container{
+  width:80%;
+  background-color:rgb(246, 244, 244);
+
+}
+
+.documents-icon{
+  font-size:4rem;
+}
+
+.col-8 .card-body .card-title{
+  font-size:1rem;
+  color:black;
+}
+
+.col-8 .card-body .card-role{
+  font-size:.8rem;
+  color: black;
+}

@@ -4,7 +4,6 @@ import {Link} from "react-router-dom";
 import "./Navbar.scss";
 import Dropdown from "./Dropdown";
 import logoNav from "../../src/assets/Logo/ANON _ Edyta LOGO white small.png";
-import logo from "../assets/Logo/ANON _ Edyta LOGO2 białe kółko - small.png";
 
 function Navbar() {
     const [click, setClick] = useState(false);
@@ -40,7 +39,7 @@ function Navbar() {
             <nav className="navbar flex-lg-column">
 
 
-                    <Link to="/" className="logoNew">
+                    <Link to="/" className="logoNew justify-content-center">
                         <img className="logo-img " src={logoNav} alt="Anon" />
                     </Link>
 

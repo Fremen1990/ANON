@@ -9,10 +9,12 @@
 
 // X-Small	None	<576px
 
-body{min-height:100vh;}
+body {
+  min-height: 100vh;
+}
 
-a{
-  color:inherit;
+a {
+  color: inherit;
   text-decoration: inherit;
 
 }
@@ -34,7 +36,7 @@ a{
 
 }
 
-.about, .team-container, .documents-container, .history-container, .contact-us-container, .society {
+.about, .team-container, .documents-container, .history-container, .contact-us-container, .society, .contact .about-container {
 
   height: 75vh;
   display: flex;
@@ -54,38 +56,27 @@ a{
 
 }
 
-.background-container{
-height:75vh;
+.background-container {
+  height: 75vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  h3{margin:3vh;}
 
-  .container-projects{
-    margin:5vh;
+  .container-projects {
     background-color: rgb(36, 34, 34);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 70%;
-    height:60%;
-    border-radius:10%;
+    height: 60%;
+    border-radius: 10%;
 
-    .projects-icon{
-      margin:5vh;
-      height:60%;
+    .projects-icon {
+      height: 60%;
       width: 60%;
-      color:white;
     }
-    h4{color:white;
-    margin: 3vh;
-    }
+
   }
 }
-
 
 
 // Small	sm	≥576px
@@ -104,6 +95,7 @@ height:75vh;
         display: flex;
         flex-direction: column;
         align-items: center;
+
         .home__article-input {
           margin: 4vh 0 4vh 0;
         }
@@ -118,15 +110,18 @@ height:75vh;
     flex-direction: row-reverse;
     justify-content: right;
     align-items: flex-start;
+
     .home__article {
       margin-top: 5vh;
       margin-right: 5vw;
       width: 25vw;
       font-size: 1.2rem;
+
       .home__subscribeForm {
         display: flex;
         flex-direction: column;
         align-items: right;
+
         .home__article-input {
           margin: 4vh 0 4vh 0;
         }
@@ -179,6 +174,7 @@ height:75vh;
         display: flex;
         flex-direction: column;
         align-items: center;
+
         .home__article-input {
           margin: 4vh 0 4vh 0;
         }

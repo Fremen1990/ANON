@@ -15,16 +15,20 @@ import Society from "./components/pages/Society";
 import Science from "./components/pages/Science";
 import Criminal from "./components/pages/Criminal";
 import Membership from "./components/pages/Membership";
-import {LogoAnon} from "./components/LogoAnon";
+// import {LogoAnon} from "./components/LogoAnon";
 
-import Article from "./components/pages/Articles/Science/Article";
+// import Article from "./components/pages/Articles/Science/Article";
 import ArticleSociety from "./components/pages/Articles/Society/ArticleSociety";
+import ArticleScience from "./components/pages/Articles/Science/ArticleScience";
+import ArticleCriminal from "./components/pages/Articles/Criminal/ArticlScience";
+
 
 import CookieBot from "react-cookiebot";
 import Footer from "./components/Footer";
 import History from "./components/pages/About/History";
 import Team from "./components/pages/About/Team";
 import Documents from './components/pages/About/Documents'
+import Contact from "./components/pages/Contact";
 
 function App() {
     const domainGroupId = "8dc9fd98-57eb-434c-813e-609e2aac3667";
@@ -35,25 +39,29 @@ function App() {
 
             <Switch>
                 <Route path="/" exact component={Home}/>
+
+                //Articles routes
                 <Route path="/articles" exact component={Articles}/>
+                <Route path="/society" exact component={Society}/>
+                <Route path="/society/article" exact component={ArticleSociety}/>
+                <Route path="/science" exact component={Science}/>
+                <Route path="/science/article" exact component={ArticleScience}/>
+                <Route path="/criminal" exact component={Criminal}/>
+                <Route path="/criminal/article" exact component={ArticleCriminal}/>
+
                 <Route path="/projects" exact component={Projects}/>
+
+                // Main page routes
                 <Route path="/about" exact component={About}/>
                 <Route path="/history" exact component={History}/>
                 <Route path="/team" exact component={Team}/>
                 <Route path="/documents" exact component={Documents}/>
-
-
-
-
                 <Route path="/membership" exact component={Membership}/>
                 <Route path="/join-us" exact component={JoinUs}/>
                 <Route path="/subscribe" exact component={Subscribe}/>
                 <Route path="/news" exact component={News}/>
-                <Route path="/society" exact component={Society}/>
-                <Route path="/society/article" exact component={ArticleSociety}/>
-                <Route path="/science" exact component={Science}/>
-                <Route path="/science/article" exact component={Article}/>
-                <Route path="/criminal" exact component={Criminal}/>
+                <Route path="/contact-us" exact component={Contact}/>
+
 
             </Switch>
             {/*<LogoAnon />*/}
