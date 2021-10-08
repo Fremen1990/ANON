@@ -3,17 +3,20 @@
 @import "./styles/animations.scss";
 
 .footer {
-  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  background: linear-gradient(90deg, rgba(28, 27, 27) 0%, rgba(26, 23, 23) 100%);
   height: 12.5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  //margin:auto;
+  position:fixed;
 
 
 
   .privacy_policy {
     width: 100vw;
     height: 40%;
+
 
     .privacy_policy_link {
       display: block;

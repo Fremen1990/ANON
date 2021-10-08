@@ -1,8 +1,8 @@
 import React from "react";
 import "../articles.scss";
 
-import ArticlePhoto1 from "../../../../assets/articles/Science - article1.PNG";
-import ArticlePhoto2 from "../../../../assets/articles/Science - article1-2.PNG";
+// import ArticlePhoto1 from "../../../../assets/articles/Science - article1.PNG";
+// import ArticlePhoto2 from "../../../../assets/articles/Science - article1-2.PNG";
 
 // import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -46,11 +46,11 @@ export default function Article() {
                   which were still growing (Cervus elaphus / the red deer). The
                   effect of this intervention, apart from helping the animal,
                   was the removal of tissue fragments from the damaged antlers.
-                  <img
-                    src={ArticlePhoto1}
-                    alt="Deer photo"
-                    className="card-img-top img-fluid d-none d-md-block w-75 h-75 float-left pr-4 pt-4 pb-4"
-                  />
+                  {/*<img*/}
+                  {/*  src={ArticlePhoto1}*/}
+                  {/*  alt="Deer photo"*/}
+                  {/*  className="card-img-top img-fluid d-none d-md-block w-75 h-75 float-left pr-4 pt-4 pb-4"*/}
+                  {/*/>*/}
                   The activity of Stem Cells Spin S.A. (JSC) mainly relies on
                   the breeding of MIC-1 and its derivative substances, as well
                   as the development and sale of products derived from them.{" "}
@@ -124,11 +124,11 @@ export default function Article() {
                   fighting against cosmetics testing on animals). ANON, as the
                   international organization, is not critical of the
                   establishment and development of Stem Cells S.A.{" "}
-                  <img
-                    src={ArticlePhoto2}
-                    alt="White mouses photo"
-                    className="card-img-top img-fluid d-none d-md-block float-right w-50 h-50 p-4"
-                  />
+                  {/*<img*/}
+                  {/*  src={ArticlePhoto2}*/}
+                  {/*  alt="White mouses photo"*/}
+                  {/*  className="card-img-top img-fluid d-none d-md-block float-right w-50 h-50 p-4"*/}
+                  {/*/>*/}
                   ( the founder of ANON is a molecular biologist, what allows
                   her for evaluation). However, we are concerned about the fact
                   that MIC-1 are obtained from red deer antlers and we do not

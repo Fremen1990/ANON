@@ -24,9 +24,10 @@
 
 
     .article-item {
-      height: 15vh;
-      display: flex;
-      margin-top:3vh;
+      //height: 15%;
+      //display: flex;
+      //margin-top:3vh;
+
 
       img {
         height: 100%;
@@ -34,13 +35,15 @@
       }
       .line-item-body{
         padding: 0 0.5rem 0 0.5rem;
+        display: flex;
+        flex-direction: column;
         .line-item-article-title{
           font-size:0.8rem;
           font-weight:bold;
           text-align: center;
                   }
         .line-item-article-description{
-          font-size:0.8rem;
+          font-size:0.6rem;
         }
       }
     }

@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/main.scss";
 import { Link } from "react-router-dom";
 
-import ArticlePhoto1 from "../../assets/articles/Science - article1.PNG";
+// import ArticlePhoto1 from "../../assets/articles/Science - article1.PNG";
 
 // import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -22,11 +22,11 @@ export default function Science() {
                 className="col-md-5 text-dark"
               >
                 <div className="card ">
-                  <img
-                    src={ArticlePhoto1}
-                    alt="SocietyPhoto"
-                    className="card-img-top img-fluid d-none d-md-block"
-                  />
+                  {/*<img*/}
+                  {/*  src={ArticlePhoto1}*/}
+                  {/*  alt="SocietyPhoto"*/}
+                  {/*  className="card-img-top img-fluid d-none d-md-block"*/}
+                  {/*/>*/}
                   <div className="card-body">
                     <h3 className="card-title text-center ">
                       The application of deer antler stem cells in medicine and

@@ -37,11 +37,11 @@ function Navbar() {
 
     return (
         <>
-            <nav className="navbar">
+            <nav className="navbar flex-lg-column">
 
 
                     <Link to="/" className="logoNew">
-                        <img className="logo-img" src={logoNav} alt="Anon" />
+                        <img className="logo-img " src={logoNav} alt="Anon" />
                     </Link>
 
                     <div className="menu-icon" onClick={handleClick}>
