@@ -6,7 +6,7 @@ import ArticlePhoto_Lemon from "../../../../assets/articles/society/1theHistoryO
 export default function ArticleSociety() {
     return (
         <>
-            <div className="article-background vh-75">
+            <div className="article-background">
 
                 <div className="container">
                     <h4 className="article-header text-left fw-bold mt-3">

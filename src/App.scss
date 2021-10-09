@@ -11,6 +11,9 @@
 
 body {
   min-height: 100vh;
+  //display: flex;
+  //width: 50vw;
+
 }
 
 a {
@@ -20,24 +23,16 @@ a {
 }
 
 .home {
-  background-image: url("./images/mobile/MOBILE-Home-picture.jpg");
-  background-position: center;
+  background-image: url("./images/mobile/MOBILE-Home-picture.png");
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  // justify-content: center;
-  align-items: center;
   height: 75vh;
   animation-name: start;
   animation-duration: 0.7s;
-
-
 }
 
 .about, .team-container, .documents-container, .history-container, .contact-us-container, .society, .contact .about-container {
-
   height: 75vh;
   display: flex;
   align-items: center;
@@ -74,113 +69,31 @@ a {
       height: 60%;
       width: 60%;
     }
-
   }
 }
-
-
 // Small	sm	≥576px
 @media (min-width: 576px) {
   .home {
     background-image: url("./images/web/WEB-Home-picture.jpeg");
-    justify-content: center;
-    align-items: center;
-
-    .home__article {
-      // margin: auto;
-      width: 80vw;
-      font-size: 1.4rem;
-
-      .home__subscribeForm {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        .home__article-input {
-          margin: 4vh 0 4vh 0;
-        }
-      }
-    }
+    background-position: center;
+    height:75vh;
   }
 }
-
 // Medium	md	≥768px
 @media (min-width: 768px) {
-  .home {
-    flex-direction: row-reverse;
-    justify-content: right;
-    align-items: flex-start;
 
-    .home__article {
-      margin-top: 5vh;
-      margin-right: 5vw;
-      width: 25vw;
-      font-size: 1.2rem;
-
-      .home__subscribeForm {
-        display: flex;
-        flex-direction: column;
-        align-items: right;
-
-        .home__article-input {
-          margin: 4vh 0 4vh 0;
-        }
-      }
-    }
-  }
-
-  .subscribe {
-    // background-image: url("./images/mobile/MOBILE-Subscribe-picture.jpg");
-    background-image: url("./images/web/WEB-Subscribe-picture.jpg");
-
-    h2 {
-      width: 50%;
-    }
-  }
 }
-
 // Large	lg	≥992px
 @media (min-width: 922px) {
-  .home {
-    .home__article {
-      width: 25vw;
-      max-height: 50vh;
-      font-size: 1.4rem;
-    }
-  }
-
-  .subscribe {
-    // background-image: url("./images/mobile/MOBILE-Subscribe-picture.jpg");
-    background-image: url("./images/web/WEB-Subscribe-picture.jpg");
-
-    h2 {
-      width: 40%;
-      margin-top: 10vh;
-      margin-right: 3vw;
-    }
-  }
+  .container-projects {
+    background-color: green;
+    width: 30%;
+    height: 60%;
+    border-radius: 10%;}
 }
-
 // Extra large	xl	≥1200px
 @media (min-width: 1200px) {
-  .home {
-    .home__article {
-      max-height: 60vh;
-      padding: 30px;
 
-      font-size: 1.7rem;
-
-      .home__subscribeForm {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        .home__article-input {
-          margin: 4vh 0 4vh 0;
-        }
-      }
-    }
-  }
 }
 
 

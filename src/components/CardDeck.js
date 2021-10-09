@@ -10,13 +10,13 @@ export default function CardDeck() {
     return (
         <>
 
-            <div className="card-deck">
+            <div className="card-deck ">
                 <Link
                     to="/society"
                     // className="article-card__Society"
-                    className="col-md-4 text-dark"
+                    className="col-md-4 text-dark "
                 >
-                    <div className="card">
+                    <div className="card ">
                         <div className="card-img-background">
                             <img className="card-img-top" src={SocietyIcon} alt="Card image cap"></img>
 

@@ -6,7 +6,7 @@
 .card {
   //background-color: rgb(246, 244, 244);
   margin:2vh;
-  width: 60vw;
+  width: 45vw;
   height: 20vh;
 
   .card-img-background {
@@ -41,4 +41,50 @@
 }
 
 
+// Small	sm	≥576px
+@media (min-width: 576px) {
+  .card-deck {
+display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
+  .card {
+    //background-color: rgb(246, 244, 244);
+    margin:2vh;
+    width: 40vw;
+    height: 20vh;
+  }
+
+
+}
+// Medium	md	≥768px
+@media (min-width: 768px) {
+  .card-deck {
+  }
+
+  .card {
+    width: 25vw;
+    height: 40vh;
+
+    .card-img-background {
+      .card-img-top {
+
+      }
+    }
+    .card-body {
+      h5{
+        font-size:2rem;
+      }
+    }
+  }
+
+}
+// Large	lg	≥992px
+@media (min-width: 922px) {
+
+}
+// Extra large	xl	≥1200px
+@media (min-width: 1200px) {
+
+}

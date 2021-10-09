@@ -3,13 +3,28 @@
   justify-content:center;
   height:75vh;
 
+
 }
 
 .about-content-container{
+  display:flex;
+  flex-direction:column;
   width:80%;
   background-color:rgb(246, 244, 244);
 
 }
+
+
+.anon-history{
+  //margin-bottom:10vh;
+  font-size:1rem;
+}
+.link-more-about{
+  display:block;
+  margin:2rem;
+height:500px;
+}
+
 
 .documents-icon{
   font-size:4rem;
@@ -24,3 +39,35 @@
   font-size:.8rem;
   color: black;
 }
+
+
+
+
+// Small	sm	≥576px
+@media (min-width: 576px) {
+
+}
+// Medium	md	≥768px
+@media (min-width: 768px) {
+
+}
+// Large	lg	≥992px
+@media (min-width: 922px) {
+
+  .anon-history{
+    //margin-bottom:10vh;
+    font-size:1.4rem;
+  }
+  .link-more-about{
+    font-size:1.4rem;
+    display:block;
+    margin:2rem;
+    height:100%;
+  }
+
+
+
+
+}
+// Extra large	xl	≥1200px
+@media (min-width: 1200px) {}

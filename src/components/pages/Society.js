@@ -15,7 +15,7 @@ export default function Society() {
 
                 <div className="articles-container">
                     <nav className="articles-menu">
-                        <span>Society</span>
+                        <span className="society-header">Society</span>
                         {/*<span>Data</span>*/}
                         {/*<span>Author</span>*/}
                         {/*<span>Clue words</span>*/}
@@ -29,7 +29,7 @@ export default function Society() {
                         <li className="article-item d-flex align-items-center border h-25">
                             <img className="h-75" src={ArticlePhoto} alt="cat"/>
                             <div className="line-item-body d-flex h-75">
-                                <h5 className="line-item-article-title text-center">The history of the founding of ANON</h5>
+                                <h5 className="line-item-article-title text-sm-center text-lg-left ">The history of the founding of ANON</h5>
                                 <p className="line-item-article-description">You know that ANON's area of interest is
                                     the
                                     animal kingdom but our website does not explain what was the source of ins...</p>
