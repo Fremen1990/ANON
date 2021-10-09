@@ -21,6 +21,26 @@ p{font-size:0.7rem;
   margin-bottom: 15vh;
 }
 
+.article-photo-container-science{
+  background-image: url("../../../science.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  height:40vh;
+}
+
+.article-photo-container-society{
+  background-image: url("../../../society.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  height:15vh;
+}
+
+.article-photo-container-crimnal{
+  background-image: url("../../../criminal.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  height:15vh;
+}
 
 
 // Small	sm	≥576px
@@ -29,12 +49,28 @@ p{font-size:0.7rem;
 }
 // Medium	md	≥768px
 @media (min-width: 768px) {
-.article-photo-container{
+.article-photo-container-science{
   background-image: url("../../../science.png");
   background-position: top;
   background-repeat: no-repeat;
   height:40vh;
+
 }
+
+  .article-photo-container-society{
+    background-image: url("../../../society_desktop.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    height:40vh;
+  }
+
+  .article-photo-container-crimnal{
+    background-image: url("../../../criminal.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    height:35vh;
+  }
+
 }
 // Large	lg	≥992px
 @media (min-width: 922px) {

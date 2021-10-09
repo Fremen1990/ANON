@@ -3,7 +3,7 @@ import "../articles.scss";
 
 import ArticlePhoto_Lemon from "../../../../../src/society.png";
 // import TeamMemberPhoto from "../../../../assets/about/team/Edith.png";
-import TeamMemberPhoto from "../../../../assets/about/team/Edith.png";
+// import TeamMemberPhoto from "../../../../assets/about/team/Edith.png";
 
 
 export default function ArticleSociety() {
@@ -12,19 +12,21 @@ export default function ArticleSociety() {
             <div className="article-background">
 
 
-                <img src={TeamMemberPhoto} className="img-fluid p-0 mb-3" alt="Team Member Photo"/>
 
                 <div className="container">
                     <h4 className="article-header text-left fw-bold mt-3">
                         The history of the founding of ANON
                     </h4>
-                    <img
-                        src={ArticlePhoto_Lemon}
-                       // src="images/society.png"
-                        alt="Bruce_Photo"
-                        // className="card-img-top img-fluid d-none d-md-block w-25 h-25 p-3 float-left"
-                        className="ncard-img-top img-fluid vw-75"
-                    />
+
+                    <div className="article-photo-container-society">
+                    </div>
+                    {/*<img*/}
+                    {/*    src={ArticlePhoto_Lemon}*/}
+                    {/*   // src="images/society.png"*/}
+                    {/*    alt="Bruce_Photo"*/}
+                    {/*    className="card-img-top img-fluid d-none d-md-block w-25 h-25 p-3 float-left"*/}
+                    {/*    className="ncard-img-top img-fluid vw-75"*/}
+                    {/*/>*/}
 
                     <p className="text-justify mt-2 lh-base">
                         You know that ANON's area of interest is the animal kingdom

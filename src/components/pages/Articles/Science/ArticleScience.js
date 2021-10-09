@@ -1,7 +1,7 @@
 import React from "react";
 import "../articles.scss";
 
-import ArticleSciencePhoto from "../../../../../src/science.png";
+// import ArticleSciencePhoto from "../../../../../src/science.png";
 
 export default function ArticlesScience() {
     return (
@@ -13,7 +13,7 @@ export default function ArticlesScience() {
                         The application of deer antler stem cells in medicine and
                         cosmetology.                    </h4>
 
-                    <div className="article-photo-container">
+                    <div className="article-photo-container-science">
 
 
                     </div>
