@@ -1,7 +1,7 @@
 import React from "react";
 import "../articles.scss";
 
-import ArticlePhoto_Lemon from "../../../../assets/articles/society/1theHistoryOfAnnon/Society-article1-Lemon.PNG";
+// import ArticlePhoto_Lemon from "../../../../../src/society.png";
 
 export default function ArticleSociety() {
     return (
@@ -13,7 +13,7 @@ export default function ArticleSociety() {
                         The history of the founding of ANON
                     </h4>
                     <img
-                        src={ArticlePhoto_Lemon}
+                        src={require("../../../../../src/society.png").default}
                         alt="Bruce_Photo"
                         // className="card-img-top img-fluid d-none d-md-block w-25 h-25 p-3 float-left"
                         className="card-img-top img-fluid vw-75"

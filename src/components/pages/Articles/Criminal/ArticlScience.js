@@ -1,7 +1,7 @@
 import React from "react";
 import "../articles.scss";
 
-import ArticleSciencePhoto from "../../../../assets/articles/science/Science - article1-2.PNG";
+// import ArticleSciencePhoto from "../../../../../src/criminal.png";
 
 export default function ArticleCriminal() {
     return (
@@ -12,7 +12,7 @@ export default function ArticleCriminal() {
                     <h4 className="article-header text-left fw-bold mt-3">
                         Lorem ipsum dolor sit amet, consectetur adipisicing. </h4>
                     <img
-                        src={ArticleSciencePhoto}
+                        src={require("../../../../../src/criminal.png").default}
                         alt="Bruce_Photo"
                         // className="card-img-top img-fluid d-none d-md-block w-25 h-25 p-3 float-left"
                         className="card-img-top img-fluid vw-75"

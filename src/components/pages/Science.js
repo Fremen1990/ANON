@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 import "../styles/main.scss";
 import "./Society.scss";
 
-import ArticlePhoto from "../../assets/articles/science/Science - article1.PNG";
+import ArticlePhoto from "../../../src/science.png";
 
 export default function Science() {
     return (
