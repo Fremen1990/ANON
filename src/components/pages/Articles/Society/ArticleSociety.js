@@ -17,8 +17,8 @@ export default function ArticleSociety() {
                        // src="images/society.png"
                         alt="Bruce_Photo"
                         // className="card-img-top img-fluid d-none d-md-block w-25 h-25 p-3 float-left"
-                        className="card-img-top img-fluid vw-75"
-                    />
+                        className="
+                        "                    />
 
                     <p className="text-justify mt-2 lh-base">
                         You know that ANON's area of interest is the animal kingdom
