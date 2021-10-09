@@ -30,20 +30,23 @@
 
 
       img {
-        //height: 50%;
-width:50%;
+        height: 50%;
+        width: 25vw;
       }
-      .line-item-body{
+
+      .line-item-body {
         padding: 0 0.5rem 0 0.5rem;
         display: flex;
         flex-direction: column;
-        .line-item-article-title{
-          font-size:0.8rem;
-          font-weight:bold;
+
+        .line-item-article-title {
+          font-size: 0.8rem;
+          font-weight: bold;
           text-align: center;
-                  }
-        .line-item-article-description{
-          font-size:0.6rem;
+        }
+
+        .line-item-article-description {
+          font-size: 0.6rem;
         }
       }
     }
@@ -69,10 +72,9 @@ width:50%;
       color: white;
 
 
-
-     span {
+      span {
         margin: auto;
-        font-size:2rem;
+        font-size: 2rem;
       }
     }
 
@@ -88,21 +90,19 @@ width:50%;
         //margin-top:3vh;
 
 
-        img {
-          height: 100%;
-
-        }
-        .line-item-body{
+        .line-item-body {
           padding: 0 0.5rem 0 0.5rem;
           display: flex;
           flex-direction: column;
-          .line-item-article-title{
-            font-size:1rem;
-            font-weight:bold;
+
+          .line-item-article-title {
+            font-size: 1rem;
+            font-weight: bold;
             text-align: center;
           }
-          .line-item-article-description{
-            font-size:0.9rem;
+
+          .line-item-article-description {
+            font-size: 0.9rem;
           }
         }
       }
@@ -110,10 +110,14 @@ width:50%;
 
   }
 }
+
 // Medium	md	≥768px
 @media (min-width: 768px) {
-
+  .articles-container .article-list .article-item img {
+    width: 25%;
+  }
 }
+
 // Large	lg	≥992px
 @media (min-width: 922px) {
   .articles-container {
@@ -122,8 +126,6 @@ width:50%;
 
 
     .articles-menu {
-
-
 
 
       span {
@@ -135,28 +137,28 @@ width:50%;
     .article-list {
 
 
-
       .article-item {
-
 
 
         img {
 
 
         }
-        .line-item-body{
+
+        .line-item-body {
           padding: 0 0.5rem 0 0.5rem;
           display: flex;
           flex-direction: column;
-          align-items: left;
+          //align-items: left;
           width: 100%;
 
-          .line-item-article-title{
-            font-size:1.3rem;
-            font-weight:bold;
+          .line-item-article-title {
+            font-size: 1.3rem;
+            font-weight: bold;
           }
-          .line-item-article-description{
-            font-size:1.2rem;
+
+          .line-item-article-description {
+            font-size: 1.2rem;
           }
         }
       }
@@ -164,6 +166,7 @@ width:50%;
 
   }
 }
+
 // Extra large	xl	≥1200px
 @media (min-width: 1200px) {
 

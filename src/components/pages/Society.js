@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 import "../styles/main.scss";
 import "./Society.scss";
 
-import ArticlePhoto from "../../assets/articles/society/1theHistoryOfAnnon/Society-article1.PNG";
+import ArticlePhoto from "../../assets/articles/society/1theHistoryOfAnnon/Society-article1-Lemon.PNG";
 
 export default function Society() {
     return (
