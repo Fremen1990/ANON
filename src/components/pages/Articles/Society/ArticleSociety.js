@@ -2,11 +2,17 @@ import React from "react";
 import "../articles.scss";
 
 import ArticlePhoto_Lemon from "../../../../assets/about/team/Devthomas - deskotop.png";
+// import TeamMemberPhoto from "../../../../assets/about/team/Edith.png";
+import TeamMemberPhoto from "../../../../assets/about/team/Edith.png";
+
 
 export default function ArticleSociety() {
     return (
         <>
             <div className="article-background">
+
+
+                <img src={TeamMemberPhoto} className="img-fluid p-0 mb-3" alt="Team Member Photo"/>
 
                 <div className="container">
                     <h4 className="article-header text-left fw-bold mt-3">
