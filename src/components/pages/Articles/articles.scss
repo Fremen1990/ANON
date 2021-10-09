@@ -29,7 +29,12 @@ p{font-size:0.7rem;
 }
 // Medium	md	≥768px
 @media (min-width: 768px) {
-
+.article-photo-container{
+  background-image: url("../../../science.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  height:40vh;
+}
 }
 // Large	lg	≥992px
 @media (min-width: 922px) {

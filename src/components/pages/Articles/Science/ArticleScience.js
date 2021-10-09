@@ -1,7 +1,7 @@
 import React from "react";
 import "../articles.scss";
 
-// import ArticleSciencePhoto from "../../../../../src/science.png";
+import ArticleSciencePhoto from "../../../../../src/science.png";
 
 export default function ArticlesScience() {
     return (
@@ -12,13 +12,19 @@ export default function ArticlesScience() {
                     <h4 className="article-header text-left fw-bold mt-3">
                         The application of deer antler stem cells in medicine and
                         cosmetology.                    </h4>
-                    <img
-                        // src={require("../../../../../src/science.png").default}
-                       src="images/science.png"
-                        alt="Bruce_Photo"
-                        // className="card-img-top img-fluid d-none d-md-block w-25 h-25 p-3 float-left"
-                        className="card-img-top img-fluid vw-75"
-                    />
+
+                    <div className="article-photo-container">
+
+
+                    </div>
+      {/*              <img*/}
+      {/*                  // src={require("../../../../../src/science.png").default}*/}
+      {/*                 // src="images/science.png"*/}
+      {/*src={ ArticleSciencePhoto}*/}
+      {/*                  alt="Bruce_Photo"*/}
+      {/*                  // className="card-img-top img-fluid d-none d-md-block w-25 h-25 p-3 float-left"*/}
+      {/*                  // className="card-img-top img-fluid vw-75"*/}
+      {/*              />*/}
 
                     <p className="text-justify mt-2 lh-base">
                         You know that ANON's area of interest is the animal kingdom

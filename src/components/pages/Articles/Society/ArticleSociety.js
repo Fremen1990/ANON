@@ -1,7 +1,7 @@
 import React from "react";
 import "../articles.scss";
 
-import ArticlePhoto_Lemon from "../../../../assets/about/team/Devthomas - deskotop.png";
+import ArticlePhoto_Lemon from "../../../../../src/society.png";
 // import TeamMemberPhoto from "../../../../assets/about/team/Edith.png";
 import TeamMemberPhoto from "../../../../assets/about/team/Edith.png";
 
