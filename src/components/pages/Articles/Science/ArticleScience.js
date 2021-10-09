@@ -13,7 +13,8 @@ export default function ArticlesScience() {
                         The application of deer antler stem cells in medicine and
                         cosmetology.                    </h4>
                     <img
-                        src={require("../../../../../src/science.png").default}
+                        // src={require("../../../../../src/science.png").default}
+                       src="images/science.png"
                         alt="Bruce_Photo"
                         // className="card-img-top img-fluid d-none d-md-block w-25 h-25 p-3 float-left"
                         className="card-img-top img-fluid vw-75"

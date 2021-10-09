@@ -12,7 +12,8 @@ export default function ArticleCriminal() {
                     <h4 className="article-header text-left fw-bold mt-3">
                         Lorem ipsum dolor sit amet, consectetur adipisicing. </h4>
                     <img
-                        src={require("../../../../../src/criminal.png").default}
+                        // src={require("../../../../../src/criminal.png").default}
+                     src="images/criminal.png"
                         alt="Bruce_Photo"
                         // className="card-img-top img-fluid d-none d-md-block w-25 h-25 p-3 float-left"
                         className="card-img-top img-fluid vw-75"
