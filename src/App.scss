@@ -23,7 +23,9 @@ a {
 }
 
 .home {
-  background-image: url("./images/mobile/MOBILE-Home-picture.png");
+  //background-image: url("./images/mobile/MOBILE-Home-picture.png");
+  background-image: url("./assets/images/web/WEB-Home-picture.jpeg");
+
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -32,7 +34,7 @@ a {
   animation-duration: 0.7s;
 }
 
-.about, .team-container, .documents-container, .history-container, .contact-us-container, .society, .contact .about-container {
+.about, .team-container, .documents-container, .history-container, .contact-us-container, .society, .contact .about-container .projects{
   height: 75vh;
   display: flex;
   align-items: center;
@@ -49,6 +51,11 @@ a {
   align-items: center;
   justify-content: center;
 
+}
+
+.page-animation{
+  animation-name: start;
+  animation-duration: 0.7s;
 }
 
 .background-container {
@@ -74,7 +81,8 @@ a {
 // Small	sm	≥576px
 @media (min-width: 576px) {
   .home {
-    background-image: url("./images/web/WEB-Home-picture.jpeg");
+    //background-image: url("./images/web/WEB-Home-picture.jpeg");
+    background-image: url("./assets/images/web/WEB-Home-picture.jpeg");
     background-position: center;
     height:79.5vh;
   }

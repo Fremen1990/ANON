@@ -2,13 +2,16 @@ import React, { useEffect, useState } from "react";
 import {Link} from "react-router-dom";
 import ShowImage from "./ShowImage";
 
+import Slide from 'react-reveal'
+
+
 const ArticleItem =( {article})=>{
 
 const categorySociety ="618fcaa225f312d839fd7e8e"
 const categoryScience ="618fcabc25f312d839fd7e94"
 
     return(<>
-
+<Slide bottom duration={2000}>
 
     <Link
             to={`/article/${article._id}`}
@@ -30,6 +33,7 @@ const categoryScience ="618fcabc25f312d839fd7e94"
                 </div>
             </li>
         </Link>
+</Slide>
         </>
     )
 }

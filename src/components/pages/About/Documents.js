@@ -1,11 +1,12 @@
 import React from "react";
 import "./About.scss"
+import "../../../App.scss"
 
 
 export default function History() {
     return (
         <>
-            <div className="about-container">
+            <div className="about-container page-animation">
 
                 <div className="about-content-container">
                     <h2 className="m-4">Dokumenty</h2>

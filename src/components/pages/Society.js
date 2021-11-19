@@ -2,6 +2,11 @@ import React, { useEffect, useState } from "react";
 
 import "../styles/main.scss";
 import "./Society.scss";
+
+
+import "../../App.scss"
+
+
 import {getArticles, getFilteredArticles} from "../apiCore"
 import ArticleItem from "../ArticleItem";
 
@@ -60,34 +65,23 @@ const Society = () => {
 
         return (
             <>
-                <div className="society">
+                <div className="society page-animation">
                     <div className="articles-container">
-                        {/*{JSON.stringify(articlesByArrival)}*/}
                         <nav className="articles-menu">
                             <span className="society-header">Społeczność</span>
-                            {/*<span>Data</span>*/}
-                            {/*<span>Author</span>*/}
-                            {/*<span>Clue words</span>*/}
+
                         </nav>
                         <ul className="article-list p-3">
+
                             {articlesByArrival.map((article, i) => (
                                 <ArticleItem
                                     key={i}
                                     article={article}
-                                    // destroy={destroy}
-                                    // user={user}
+
                                 />
                             ))}
 
 
-                            {/*{filteredResults.map((article, i) => (*/}
-                            {/*    <ArticleItem*/}
-                            {/*        key={i}*/}
-                            {/*        article={article}*/}
-                            {/*        // destroy={destroy}*/}
-                            {/*        // user={user}*/}
-                            {/*    />*/}
-                            {/*))}*/}
 
                         </ul>
 

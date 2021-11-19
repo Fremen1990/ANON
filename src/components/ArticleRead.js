@@ -3,6 +3,10 @@ import {read}from "./apiCore"
 import ShowImage from "./ShowImage";
 import "./artricleRead.css"
 
+import "../App.scss"
+
+import Slide from "react-reveal"
+
 export default function ArticleSociety(props) {
 
     const [article, setArticle] = useState({});
@@ -27,8 +31,9 @@ export default function ArticleSociety(props) {
 
     return (
         <>
-            <div className="article-background">
+            <div className="article-background page-animation">
 
+                <Slide bottom duration={2000}>
 
 
                 <div className="container">
@@ -43,9 +48,12 @@ export default function ArticleSociety(props) {
                         <ShowImage item={article} url="article"  />
                     </div>
 
-                    <p className="article_paragraph text-justify mt-2 lh-base">
-                        {article.paragraph1}
-                    </p>
+
+                        <p className="article_paragraph text-justify mt-2 lh-base">
+                            {article.paragraph1}
+                        </p>
+
+
 
                     <p className="article_paragraph text-justify mt-2 lh-base">
                         {article.paragraph2}
@@ -93,10 +101,12 @@ export default function ArticleSociety(props) {
                     <footer className="p-3">
               <span>{article.articleDate},  </span>
               <span>Author: {article.author}</span>
+
           </footer>
 
 
                 </div>
+                </Slide>
 
             </div>
         </>

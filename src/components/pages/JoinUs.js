@@ -2,7 +2,6 @@ import { useState } from "react";
 import React from "react";
 import "../styles/main.scss";
 import ContactForm from "../ContactForm";
-import FormSuccess from "../FormSuccess";
 import "../ContactForm.scss";
 
 export default function JoinUs() {
@@ -16,13 +15,10 @@ export default function JoinUs() {
     <>
       <div className="contact-us-container">
         <div className="form-container mt-0">
-          {/* <span className="close-btn">x</span> */}
 
-          {!isSubmitted ? (
+
             <ContactForm submitForm={submitForm} />
-          ) : (
-            <FormSuccess />
-          )}
+
         </div>
       </div>
     </>

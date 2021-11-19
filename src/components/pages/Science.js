@@ -4,6 +4,9 @@ import {Link} from "react-router-dom";
 
 import "../styles/main.scss";
 import "./Society.scss";
+
+import "../../App.scss"
+
 import ArticleItem from "../ArticleItem";
 import {getArticles} from "../apiCore";
 
@@ -32,13 +35,11 @@ export default function Science() {
 
     return (
         <>
-            <div className="society">
+            <div className="society page-animation">
                 <div className="articles-container">
                     <nav className="articles-menu">
                         <span>Nauka</span>
-                        {/*<span>Data</span>*/}
-                        {/*<span>Author</span>*/}
-                        {/*<span>Clue words</span>*/}
+
                     </nav>
 
                     <ul className="article-list p-0">
@@ -47,8 +48,7 @@ export default function Science() {
                             <ArticleItem
                                 key={i}
                                 article={article}
-                                // destroy={destroy}
-                                // user={user}
+
                             />
                         ))}
 
