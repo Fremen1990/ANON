@@ -13,18 +13,18 @@ export default function History() {
             <div className="about-container">
                 <div className="about-content-container">
                     <div className="team-container justify-content-start">
-                        <h3 className="m-4">Team</h3>
+                        <h3 className="m-4">Zespół</h3>
 
 
                         <div className="card m-0 p-2 d-grid w-100 h-100"
                             // style={{"max-width": "540px"}}
                         >
                             <div className="row g-0">
-                                <div className="col-4">
+                                <div className="col-2">
                                     <img src={TeamMemberPhoto} className="img-fluid p-0 mb-3" alt="Team Member Photo"/>
-                                    <i className="fab fa-facebook-f fs-4 m-1"></i>
-                                    <i className="fab fa-instagram fs-4 m-1 "></i>
-                                    <i className="far fa-envelope fs-4 m-1"></i>
+                                    {/*<i className="fab fa-facebook-f fs-4 m-1"></i>*/}
+                                    {/*<i className="fab fa-instagram fs-4 m-1 "></i>*/}
+                                    {/*<i className="far fa-envelope fs-4 m-1"></i>*/}
                                 </div>
                                 <div className="col-8">
                                     <div className="d-grid pl-4">
@@ -50,11 +50,11 @@ export default function History() {
                             // style={{"max-width": "540px"}}
                         >
                             <div className="row g-0">
-                                <div className="col-4">
+                                <div className="col-2">
                                     <img src={TeamMemberPhoto2} className="img-fluid p-0 mb-3" alt="Team Member Photo"/>
-                                    <i className="fab fa-facebook-f fs-4 m-1"></i>
-                                    <i className="fab fa-instagram fs-4 m-1 "></i>
-                                    <i className="far fa-envelope fs-4 m-1"></i>
+                                    {/*<i className="fab fa-facebook-f fs-4 m-1"></i>*/}
+                                    {/*<i className="fab fa-instagram fs-4 m-1 "></i>*/}
+                                    {/*<i className="far fa-envelope fs-4 m-1"></i>*/}
                                 </div>
                                 <div className="col-8">
                                     <div className="d-grid pl-4">
@@ -77,11 +77,11 @@ export default function History() {
                             // style={{"max-width": "540px"}}
                         >
                             <div className="row g-0">
-                                <div className="col-4">
+                                <div className="col-2">
                                     <img src={TeamMemberEmpty} className="img-fluid p-0 mb-3  " alt="Team Member Photo"/>
-                                    <i className="fab fa-facebook-f fs-4 m-1"></i>
-                                    <i className="fab fa-instagram fs-4 m-1 "></i>
-                                    <i className="far fa-envelope fs-4 m-1"></i>
+                                    {/*<i className="fab fa-facebook-f fs-4 m-1"></i>*/}
+                                    {/*<i className="fab fa-instagram fs-4 m-1 "></i>*/}
+                                    {/*<i className="far fa-envelope fs-4 m-1"></i>*/}
                                 </div>
                                 <div className="col-8">
                                     <div className="d-grid pl-4">
@@ -100,11 +100,11 @@ export default function History() {
                             // style={{"max-width": "540px"}}
                         >
                             <div className="row g-0">
-                                <div className="col-4">
+                                <div className="col-2">
                                     <img src={TeamMemberEmpty} className="img-fluid p-0 mb-3" alt="Team Member Photo"/>
-                                    <i className="fab fa-facebook-f fs-4 m-1"></i>
-                                    <i className="fab fa-instagram fs-4 m-1 "></i>
-                                    <i className="far fa-envelope fs-4 m-1"></i>
+                                    {/*<i className="fab fa-facebook-f fs-4 m-1"></i>*/}
+                                    {/*<i className="fab fa-instagram fs-4 m-1 "></i>*/}
+                                    {/*<i className="far fa-envelope fs-4 m-1"></i>*/}
                                 </div>
                                 <div className="col-8">
                                     <div className="d-grid pl-4">
@@ -123,11 +123,11 @@ export default function History() {
                             // style={{"max-width": "540px"}}
                         >
                             <div className="row g-0">
-                                <div className="col-4">
+                                <div className="col-2">
                                     <img src={TeamMemberEmpty} className="img-fluid p-0 mb-3" alt="Team Member Photo"/>
-                                    <i className="fab fa-facebook-f fs-4 m-1"></i>
-                                    <i className="fab fa-instagram fs-4 m-1 "></i>
-                                    <i className="far fa-envelope fs-4 m-1"></i>
+                                    {/*<i className="fab fa-facebook-f fs-4 m-1"></i>*/}
+                                    {/*<i className="fab fa-instagram fs-4 m-1 "></i>*/}
+                                    {/*<i className="far fa-envelope fs-4 m-1"></i>*/}
                                 </div>
                                 <div className="col-8">
                                     <div className="d-grid pl-4 ">

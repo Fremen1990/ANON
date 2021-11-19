@@ -21,6 +21,7 @@ import Membership from "./components/pages/Membership";
 import ArticleSociety from "./components/pages/Articles/Society/ArticleSociety";
 import ArticleScience from "./components/pages/Articles/Science/ArticleScience";
 import ArticleCriminal from "./components/pages/Articles/Criminal/ArticlScience";
+import ArticleRead from "./components/ArticleRead"
 
 
 import CookieBot from "react-cookiebot";
@@ -42,6 +43,7 @@ function App() {
 
                 //Articles routes
                 <Route path="/articles" exact component={Articles}/>
+                <Route path="/article/:articleId" exact component={ArticleRead}/>
                 <Route path="/society" exact component={Society}/>
                 <Route path="/society/article" exact component={ArticleSociety}/>
                 <Route path="/science" exact component={Science}/>

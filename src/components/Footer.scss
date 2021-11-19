@@ -4,52 +4,60 @@
 
 .footer {
   background: linear-gradient(90deg, rgba(28, 27, 27) 0%, rgba(26, 23, 23) 100%);
-  height: 12.5vh;
+  height: 8vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
 
-  .privacy_policy {
-    width: 100vw;
-    height: 40%;
+  .left_footer{
+    width: 50vw;
+    .privacy_policy {
+      //width: 100vw;
+      height: 40%;
 
 
-    .privacy_policy_link {
-      display: block;
-      margin-left: 30px;
-      margin-top: 8px;
+      .privacy_policy_link {
+        display: block;
+        margin-left: 30px;
+        margin-top: 8px;
+        color: white !important;
+        text-decoration: underline;
+        font-size: 12px;
+      }
+    }
+
+    .greenLine {
+      //display: block;
+      height: 2px;
+      margin-top: 2px;
+      width: 100%;
+      background-color: $default-green;
+    }
+  }
+
+
+ .contact {
       color: white !important;
-      text-decoration: underline;
-      font-size: 12px;
-    }
-  }
+      font-size: 10px;
+      padding: 2px;
 
-  .greenLine {
-    //display: block;
-    height: 1px;
-    margin: 2px;
-    width: 90%;
-    background-color: $default-green;
-  }
+      .phone {
+        margin-right: 15px;
+      }
 
-  .contact {
-    color: white !important;
-    font-size: 12px;
-    padding: 5px;
-
-    .phone {
-      margin-right: 15px;
+      a {
+        color: white !important;
+      }
     }
 
-    a {
+    .website_by {
       color: white !important;
+      font-size: 10px;
     }
-  }
 
-  .website_by {
-    color: white !important;
-    font-size: 10px;
-  }
+
+
+
 }
 
 // Small	sm	≥576px
@@ -71,16 +79,16 @@
       .privacy_policy_link {
         display: block;
         margin-left: 30px;
-        margin-top: 8px;
+        margin-top: 5px;
         color: white !important;
         text-decoration: underline;
-        font-size: 1rem;
+        font-size: 5rem;
       }
     }
 
     .greenLine {
       //display: block;
-      height: 3px;
+      height: 2px;
       margin: 2px;
       width: 90%;
       background-color: $default-green;
@@ -91,7 +99,7 @@
       margin-right: 5%;
       align-self: end;
       color: white !important;
-      font-size: 1rem;
+      font-size: 0.9rem;
       //padding-left: 1rem;
 
 

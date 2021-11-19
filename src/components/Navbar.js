@@ -39,8 +39,8 @@ function Navbar() {
             <nav className="navbar flex-lg-column">
 
 
-                    <Link to="/" className="logoNew justify-content-center">
-                        <img className="logo-img " src={logoNav} alt="Anon" />
+                    <Link to="/" className="logoNew navbar-brand justify-content-center">
+                        <img className="navbar-brand h-100" src={logoNav} alt="Anon" />
                     </Link>
 
                     <div className="menu-icon" onClick={handleClick}>
@@ -59,7 +59,7 @@ function Navbar() {
                                     className="nav-links text-white"
                                     onClick={closeMobileMenu}
                                 >
-                                    Home
+                                    Strona główna
                                 </Link>
                             </li>
 
@@ -73,7 +73,7 @@ function Navbar() {
                                     className="nav-links text-white"
                                     onClick={closeMobileMenu}
                                 >
-                                    Articles <i className="fas fa-caret-down"/>
+                                    Artykuły <i className="fas fa-caret-down"/>
                                 </Link>
                                 {dropdown && <Dropdown/>}
                             </li>
@@ -84,7 +84,7 @@ function Navbar() {
                                     className="nav-links text-white"
                                     onClick={closeMobileMenu}
                                 >
-                                    Projects
+                                    Projekty
                                 </Link>
                             </li>
 
@@ -94,7 +94,7 @@ function Navbar() {
                                     className="nav-links text-white"
                                     onClick={closeMobileMenu}
                                 >
-                                    Join us
+                        Dołącz do nas
                                 </Link>
                             </li>
 
@@ -105,7 +105,7 @@ function Navbar() {
                                     className="nav-links text-white"
                                     onClick={closeMobileMenu}
                                 >
-                                    About
+                                    O nas
                                 </Link>
                             </li>
 
@@ -125,7 +125,7 @@ function Navbar() {
                                     className="nav-links text-white"
                                     onClick={closeMobileMenu}
                                 >
-                                    Contact
+                                    Kontakt
                                 </Link>
                             </li>
 

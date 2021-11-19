@@ -22,7 +22,7 @@ export default function CardDeck() {
 
                         </div>
                         <div className="card-body">
-                            <h5 className="card-title">Society</h5>
+                            <h5 className="card-title">Społeczeństwo</h5>
                         </div>
                     </div>
                 </Link>
@@ -38,7 +38,7 @@ export default function CardDeck() {
                                  alt="Card image cap"></img>
                         </div>
                         <div className="card-body">
-                            <h5 className="card-title">Science</h5>
+                            <h5 className="card-title">Nauka</h5>
                         </div>
                     </div>
                 </Link>
@@ -54,7 +54,7 @@ export default function CardDeck() {
                                  alt="Card image cap"></img>
                         </div>
                         <div className="card-body">
-                            <h5 className="card-title">Criminal</h5>
+                            <h5 className="card-title">Przestępczość</h5>
                         </div>
                     </div>
                 </Link>

@@ -28,27 +28,27 @@
       //display: flex;
       //margin-top:3vh;
 
+      //
+      //img {
+      //  height: 100%;
+      //  width: 50vw;
+      //}
 
-      img {
-        height: 50%;
-        width: 25vw;
-      }
-
-      .line-item-body {
-        padding: 0 0.5rem 0 0.5rem;
-        display: flex;
-        flex-direction: column;
-
-        .line-item-article-title {
-          font-size: 0.8rem;
-          font-weight: bold;
-          text-align: center;
-        }
-
-        .line-item-article-description {
-          font-size: 0.6rem;
-        }
-      }
+      //.line-item-body {
+      //  padding: 0 0.5rem 0 0.5rem;
+      //  display: flex;
+      //  flex-direction: column;
+      //
+      //  .line-item-article-title {
+      //    font-size: 0.8rem;
+      //    font-weight: bold;
+      //    text-align: center;
+      //  }
+      //
+      //  .line-item-article-description {
+      //    font-size: 0.6rem;
+      //  }
+      //}
     }
   }
 
@@ -125,44 +125,44 @@
     width: 85%;
 
 
-    .articles-menu {
-
-
-      span {
-
-      }
-    }
-
-
-    .article-list {
-
-
-      .article-item {
-
-
-        img {
-
-
-        }
-
-        .line-item-body {
-          padding: 0 0.5rem 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          //align-items: left;
-          width: 100%;
-
-          .line-item-article-title {
-            font-size: 1.3rem;
-            font-weight: bold;
-          }
-
-          .line-item-article-description {
-            font-size: 1.2rem;
-          }
-        }
-      }
-    }
+    //.articles-menu {
+    //
+    //
+    //  span {
+    //
+    //  }
+    //}
+    //
+    //
+    //.article-list {
+    //
+    //
+    //  .article-item {
+    //
+    //
+    //    img {
+    //
+    //
+    //    }
+    //
+    //    .line-item-body {
+    //      padding: 0 0.5rem 0 0.5rem;
+    //      display: flex;
+    //      flex-direction: column;
+    //      //align-items: left;
+    //      width: 100%;
+    //
+    //      .line-item-article-title {
+    //        font-size: 1.3rem;
+    //        font-weight: bold;
+    //      }
+    //
+    //      .line-item-article-description {
+    //        font-size: 1.2rem;
+    //      }
+    //    }
+    //  }
+    //}
 
   }
 }

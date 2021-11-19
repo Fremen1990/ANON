@@ -21,7 +21,7 @@ export default function CardDeck() {
 
                     </div>
                     <div className="card-body">
-                        <h5 className="card-title">History</h5>
+                        <h5 className="card-title">Historia</h5>
                     </div>
                 </div>
 
@@ -38,7 +38,7 @@ export default function CardDeck() {
                              alt="Card image cap"></img>
                     </div>
                     <div className="card-body">
-                        <h5 className="card-title">Team</h5>
+                        <h5 className="card-title">Zespół</h5>
                     </div>
                 </div>
                 </Link>
@@ -54,7 +54,7 @@ export default function CardDeck() {
                              alt="Card image cap"></img>
                     </div>
                     <div className="card-body">
-                        <h5 className="card-title">Documents</h5>
+                        <h5 className="card-title">Dokumenty</h5>
                     </div>
                 </div>
                 </Link>

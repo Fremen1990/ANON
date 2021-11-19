@@ -7,7 +7,7 @@ export default function History() {
             <div className="about-container">
 
                 <div className="about-content-container p-md-5">
-                    <h3 className="m-4">History of ANON</h3>
+                    <h2 className="m-4">History of ANON</h2>
                     <p className="anon-history  text-justify p-3 pb-0 ">Trully inspiration to establish ANON was very small and homeless cat which was adopted by the Edith.
                         Over time, a friendship which developed between her and her cat, made her an animal lover. From that
                         time she began to think there must be many other animals who need love and help from people. After a

@@ -1,136 +1,100 @@
-import React from "react";
-
-import {Link} from "react-router-dom";
+import React, { useEffect, useState } from "react";
 
 import "../styles/main.scss";
 import "./Society.scss";
+import {getArticles, getFilteredArticles} from "../apiCore"
+import ArticleItem from "../ArticleItem";
 
-import ArticlePhoto from "../../assets/articles/society/1theHistoryOfAnnon/Society-article1-Lemon.PNG";
+const Society = () => {
 
-export default function Society() {
-    return (
-        <>
-            <div className="society">
-                {/* <h2>Society</h2> */}
+    const categorySociety ="618fcaa225f312d839fd7e8e"
+    const categoryScience ="618fcabc25f312d839fd7e94"
 
-                <div className="articles-container">
-                    <nav className="articles-menu">
-                        <span className="society-header">Society</span>
-                        {/*<span>Data</span>*/}
-                        {/*<span>Author</span>*/}
-                        {/*<span>Clue words</span>*/}
-                    </nav>
+    const [myFilters, setMyFilters] = useState({
+        filters: {
+            category: [],
+            approved: [],
+        },
+    });
 
-                    <ul className="article-list p-0">
-
-                        <Link
-                            to="/society/article"
-                        >
-                        <li className="article-item d-flex align-items-center border h-25">
-                            <img className="" src={ArticlePhoto} alt="cat"/>
-                            <div className="line-item-body d-flex h-75">
-                                <h5 className="line-item-article-title text-sm-center text-lg-left ">The history of the founding of ANON</h5>
-                                <p className="line-item-article-description">You know that ANON's area of interest is
-                                    the
-                                    animal kingdom but our website does not explain what was the source of ins...</p>
-                                {/*<span>Date</span>*/}
-                                {/*<span>Author</span>*/}
-                            </div>
-                        </li>
-                        </Link>
-
-                        <Link
-                            to="/society/article"
-                        >
-                            <li className="article-item d-flex align-items-center border h-25">
-                                <img className="h-75" src={ArticlePhoto} alt="cat"/>
-                                <div className="line-item-body d-flex">
-                                    <h5 className="line-item-article-title">The history of the founding of ANON</h5>
-                                    <p className="line-item-article-description ">You know that ANON's area of interest is
-                                        the
-                                        animal kingdom but our website does not explain what was the source of ins...</p>
-                                    {/*<span>Date</span>*/}
-                                    {/*<span>Author</span>*/}
-                                </div>
-                            </li>
-                        </Link>
-
-                        <Link
-                            to="/society/article"
-                        >
-                            <li className="article-item d-flex align-items-center border h-25">
-                                <img className="h-75" src={ArticlePhoto} alt="cat"/>
-                                <div className="line-item-body d-flex">
-                                    <h5 className="line-item-article-title">The history of the founding of ANON</h5>
-                                    <p className="line-item-article-description ">You know that ANON's area of interest is
-                                        the
-                                        animal kingdom but our website does not explain what was the source of ins...</p>
-                                    {/*<span>Date</span>*/}
-                                    {/*<span>Author</span>*/}
-                                </div>
-                            </li>
-                        </Link>
-
-                        <Link
-                            to="/society/article"
-                        >
-                            <li className="article-item d-flex align-items-center border h-25">
-                                <img className="h-75" src={ArticlePhoto} alt="cat"/>
-                                <div className="line-item-body d-flex">
-                                    <h5 className="line-item-article-title">The history of the founding of ANON</h5>
-                                    <p className="line-item-article-description ">You know that ANON's area of interest is
-                                        the
-                                        animal kingdom but our website does not explain what was the source of ins...</p>
-                                    {/*<span>Date</span>*/}
-                                    {/*<span>Author</span>*/}
-                                </div>
-                            </li>
-                        </Link>
-                        {/*<Link*/}
-                        {/*    to="/society/article"*/}
-                        {/*>*/}
-                        {/*<li className="article-item">*/}
-                        {/*    <img src={ArticlePhoto} alt="cat"/>*/}
-                        {/*    <div className="line-item-body">*/}
-                        {/*        <h5 className="line-item-article-title">The history of the founding of ANON</h5>*/}
-                        {/*        <p className="line-item-article-description">You know that ANON's area of interest is*/}
-                        {/*            the*/}
-                        {/*            animal kingdom but our website does not explain what was the source of inspiration*/}
-                        {/*            for*/}
-                        {/*            our...</p>*/}
-                        {/*        /!*<span>Date</span>*!/*/}
-                        {/*        /!*<span>Author</span>*!/*/}
-                        {/*    </div>*/}
-                        {/*</li>*/}
-                        {/*</Link>*/}
+    const [error, setError] = useState(false);
+    const [limit, setLimit] = useState(25);
+    const [articlesByArrival, setArticlesByArrival] = useState([]);
 
 
-
-                        {/*<Link*/}
-                        {/*    to="/society/article"*/}
-                        {/*>*/}
-                        {/*<li className="article-item">*/}
-                        {/*    <img src={ArticlePhoto} alt="cat"/>*/}
-                        {/*    <div className="line-item-body">*/}
-                        {/*        <h5 className="line-item-article-title">The history of the founding of ANON</h5>*/}
-                        {/*        <p className="line-item-article-description">You know that ANON's area of interest is*/}
-                        {/*            the*/}
-                        {/*            animal kingdom but our website does not explain what was the source of inspiration*/}
-                        {/*            for*/}
-                        {/*            our...</p>*/}
-                        {/*        /!*<span>Date</span>*!/*/}
-                        {/*        /!*<span>Author</span>*!/*/}
-                        {/*    </div>*/}
-                        {/*</li>*/}
-                        {/*</Link>*/}
+    const [categories, setCategories] = useState([]);
+    const [skip, setSkip] = useState(0);
+    const [size, setSize] = useState(0);
+    const [filteredResults, setFilteredResults] = useState(0);
+    // const [articles, setArticles] = useState([]);
 
 
-                    </ul>
+    const loadArticlesByArrival = () => {
+        getArticles("createdAt", limit).then((data) => {
+            if (data.error) {
+                setError(data.error);
+            } else {
+                setArticlesByArrival(data);
+            }
+        });
+    };
+
+    const loadFilteredResults = (categorySociety) => {
+        // console.log(newFilters)
+        getFilteredArticles(skip, limit, categorySociety).then((data) => {
+            if (data.error) {
+                setError(data.error);
+            } else {
+                setFilteredResults(data.data);
+                setSize(data.size);
+                setSkip(0);
+            }
+        });
+    };
 
 
+        useEffect(() => {
+            loadArticlesByArrival();
+            // loadFilteredResults();
+        }, ['']);
+
+        return (
+            <>
+                <div className="society">
+                    <div className="articles-container">
+                        {/*{JSON.stringify(articlesByArrival)}*/}
+                        <nav className="articles-menu">
+                            <span className="society-header">Społeczność</span>
+                            {/*<span>Data</span>*/}
+                            {/*<span>Author</span>*/}
+                            {/*<span>Clue words</span>*/}
+                        </nav>
+                        <ul className="article-list p-3">
+                            {articlesByArrival.map((article, i) => (
+                                <ArticleItem
+                                    key={i}
+                                    article={article}
+                                    // destroy={destroy}
+                                    // user={user}
+                                />
+                            ))}
+
+
+                            {/*{filteredResults.map((article, i) => (*/}
+                            {/*    <ArticleItem*/}
+                            {/*        key={i}*/}
+                            {/*        article={article}*/}
+                            {/*        // destroy={destroy}*/}
+                            {/*        // user={user}*/}
+                            {/*    />*/}
+                            {/*))}*/}
+
+                        </ul>
+
+                    </div>
                 </div>
+            </>
+        );
+    }
 
-            </div>
-        </>
-    );
-}
+export default Society;

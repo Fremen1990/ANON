@@ -1,13 +1,36 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 
 import {Link} from "react-router-dom";
 
 import "../styles/main.scss";
 import "./Society.scss";
+import {getArticles} from "../apiCore";
+import ArticleItem from "../ArticleItem";
 
-import ArticlePhoto from "../../assets/articles/science/Science - article1 (2).PNG";
 
 export default function Criminal() {
+
+
+
+    const [error, setError] = useState(false);
+    const [limit, setLimit] = useState(25);
+    const [articlesByArrival, setArticlesByArrival] = useState([]);
+
+
+    const loadArticlesByArrival = () => {
+        getArticles("createdAt", limit).then((data) => {
+            if (data.error) {
+                setError(data.error);
+            } else {
+                setArticlesByArrival(data);
+            }
+        });
+    };
+
+    useEffect(() => {
+        loadArticlesByArrival();
+    }, ['']);
+
     return (
         <>
             <div className="society">
@@ -21,61 +44,15 @@ export default function Criminal() {
 
                     <ul className="article-list p-0">
 
-                        <Link
-                            to="/criminal/article"
-                        >
-                        <li className="article-item d-flex align-items-center border h-25">
-                            <img className="h-75" src={ArticlePhoto} alt="cat"/>
-                            <div className="line-item-body d-flex h-75">
-                                <h5 className="line-item-article-title text-center"> Lorem ipsum dolor sit amet, consectetur adipisicing </h5>
-                                <p className="line-item-article-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet autem culpa deleniti enim impedit, nesciunt nulla perspiciatis quas quibusdam, ration</p>
-                                {/*<span>Date</span>*/}
-                                {/*<span>Author</span>*/}
-                            </div>
-                        </li>
-                        </Link>
+                        {articlesByArrival.map((article, i) => (
+                            <ArticleItem
+                                key={i}
+                                article={article}
+                                // destroy={destroy}
+                                // user={user}
+                            />
+                        ))}
 
-                        <Link
-                            to="/criminal/article"
-                        >
-                            <li className="article-item d-flex align-items-center border h-25">
-                                <img className="h-75" src={ArticlePhoto} alt="cat"/>
-                                <div className="line-item-body d-flex h-75">
-                                    <h5 className="line-item-article-title text-center"> Lorem ipsum dolor sit amet, consectetur adipisicing </h5>
-                                    <p className="line-item-article-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet autem culpa deleniti enim impedit, nesciunt nulla perspiciatis quas quibusdam, ration</p>
-                                    {/*<span>Date</span>*/}
-                                    {/*<span>Author</span>*/}
-                                </div>
-                            </li>
-                        </Link>
-
-                        <Link
-                            to="/criminal/article"
-                        >
-                            <li className="article-item d-flex align-items-center border h-25">
-                                <img className="h-75" src={ArticlePhoto} alt="cat"/>
-                                <div className="line-item-body d-flex h-75">
-                                    <h5 className="line-item-article-title text-center"> Lorem ipsum dolor sit amet, consectetur adipisicing </h5>
-                                    <p className="line-item-article-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet autem culpa deleniti enim impedit, nesciunt nulla perspiciatis quas quibusdam, ration</p>
-                                    {/*<span>Date</span>*/}
-                                    {/*<span>Author</span>*/}
-                                </div>
-                            </li>
-                        </Link>
-
-                        <Link
-                            to="/criminal/article"
-                        >
-                            <li className="article-item d-flex align-items-center border h-25">
-                                <img className="h-75" src={ArticlePhoto} alt="cat"/>
-                                <div className="line-item-body d-flex h-75">
-                                    <h5 className="line-item-article-title text-center"> Lorem ipsum dolor sit amet, consectetur adipisicing </h5>
-                                    <p className="line-item-article-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet autem culpa deleniti enim impedit, nesciunt nulla perspiciatis quas quibusdam, ration</p>
-                                    {/*<span>Date</span>*/}
-                                    {/*<span>Author</span>*/}
-                                </div>
-                            </li>
-                        </Link>
 
                     </ul>
                 </div>
