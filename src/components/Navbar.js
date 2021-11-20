@@ -36,7 +36,7 @@ function Navbar() {
 
     return (
         <>
-            <nav className="navbar flex-lg-column">
+            <nav className="navbar flex-lg-column animate-navbar">
 
 
                     <Link to="/" className="logoNew navbar-brand justify-content-center">

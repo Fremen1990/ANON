@@ -9,6 +9,7 @@ import "../../App.scss"
 
 import {getArticles, getFilteredArticles} from "../apiCore"
 import ArticleItem from "../ArticleItem";
+import Layout from "../Layout";
 
 const Society = () => {
 
@@ -64,7 +65,7 @@ const Society = () => {
         }, ['']);
 
         return (
-            <>
+            <Layout>
                 <div className="society page-animation">
                     <div className="articles-container">
                         <nav className="articles-menu">
@@ -87,7 +88,7 @@ const Society = () => {
 
                     </div>
                 </div>
-            </>
+            </Layout>
         );
     }
 

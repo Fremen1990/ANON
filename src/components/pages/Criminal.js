@@ -9,6 +9,7 @@ import "../../App.scss"
 
 import {getArticles} from "../apiCore";
 import ArticleItem from "../ArticleItem";
+import Layout from "../Layout";
 
 
 export default function Criminal() {
@@ -35,7 +36,7 @@ export default function Criminal() {
     }, ['']);
 
     return (
-        <>
+ <Layout>
             <div className="society page-animation">
                 <div className="articles-container">
                     <nav className="articles-menu">
@@ -57,6 +58,6 @@ export default function Criminal() {
                     </ul>
                 </div>
             </div>
-        </>
+ </Layout>
     );
 }

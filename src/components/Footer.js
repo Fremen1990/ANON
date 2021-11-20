@@ -5,7 +5,7 @@ import "./Footer.scss";
 function Footer(props) {
     return (
         <>
-            <footer className="footer fixed-bottom d-grid">
+            <footer className="footer d-grid  fixed-bottom">
                 <div className="left_footer ">
 
                     <div className="privacy_policy">
@@ -17,7 +17,7 @@ function Footer(props) {
                 </div>
 
 
-                <div className="right_footer contact">
+                <div className="right_footer contact-footer">
                     <span className="phone">
                         <i className="fas fa-phone-alt"></i> <span>+48 564 587 245</span>   </span>
                     <span className="mail"> <i className="far fa-envelope"></i> <a

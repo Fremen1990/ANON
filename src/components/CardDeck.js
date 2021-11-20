@@ -5,6 +5,7 @@ import CriminalIcon from "../assets/articles/icons/ikona-articles-criminology.sv
 import "./CardDeck.scss"
 import {Link} from "react-router-dom";
 
+import {data} from "./pages/data"
 
 export default function CardDeck() {
     return (
@@ -14,7 +15,7 @@ export default function CardDeck() {
                 <Link
                     to="/society"
                     // className="article-card__Society"
-                    className="col-md-4 text-dark "
+                    className="col-md-4 text-dark  "
                 >
                     <div className="card ">
                         <div className="card-img-background">

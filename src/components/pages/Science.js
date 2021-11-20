@@ -9,6 +9,7 @@ import "../../App.scss"
 
 import ArticleItem from "../ArticleItem";
 import {getArticles} from "../apiCore";
+import Layout from "../Layout";
 
 
 export default function Science() {
@@ -34,7 +35,7 @@ export default function Science() {
 
 
     return (
-        <>
+        <Layout>
             <div className="society page-animation">
                 <div className="articles-container">
                     <nav className="articles-menu">
@@ -56,6 +57,6 @@ export default function Science() {
                     </ul>
                 </div>
             </div>
-        </>
+        </Layout>
     );
 }

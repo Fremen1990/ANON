@@ -1,17 +1,17 @@
 import React from "react";
-import ProjecctsIcon from "../../assets/projects/projects_icon.svg";
 import CardDeckProjects from "../CardDeckProjects";
 import "../styles/main.scss";
 import "../../App.scss"
+import Layout from "../Layout";
 
 export default function Projects() {
     return (
-        <>
-            <section className="articles">
+        <Layout>
+            <section className="projects">
                 <CardDeckProjects/>
 
             </section>
 
-        </>
+        </Layout>
     );
 }

@@ -13,8 +13,8 @@
   justify-content: center;
   align-items: center;
   font-size: 1.3rem;
-  animation-name: startNavBar;
-  animation-duration: 0.5s;
+  //animation-name: startNavBar;
+  //animation-duration: 0.5s;
 }
 
 .nav-menu {
@@ -67,6 +67,20 @@
 
   }
 
+}
+
+.animate-navbar {
+  box-shadow: 1px 1px 1px #222;
+  animation: moveDown .5s ease-in-out;
+}
+
+@keyframes moveDown {
+  from {
+    transform: translateY(-5rem);
+  }
+  to {
+    transform: translateY(0rem);
+  }
 }
 
 
@@ -131,8 +145,8 @@
     width: 120px;
     height: 120px;
     transform: translateX(-50%);
-    animation-name: start;
-    animation-duration: 3s;
+    //animation-name: start;
+    //animation-duration: 3s;
   }
 
   .menu-icon {

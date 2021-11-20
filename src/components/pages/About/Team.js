@@ -9,10 +9,11 @@ import Slide from "react-reveal";
 import TeamMemberPhoto from '../../../assets/about/team/Edith.png'
 import TeamMemberPhoto2 from '../../../assets/about/team/Devthomas - deskotop.png'
 import TeamMemberEmpty from '../../../assets/about/team/EmptyPersonFoto.png'
+import Layout from "../../Layout";
 
 export default function History() {
     return (
-        <>
+        <Layout>
             <div className="about-container page-animation">
                 <div className="about-content-container">
                     <div className="team-container justify-content-start">
@@ -168,7 +169,7 @@ export default function History() {
                     </div>
                 </div>
             </div>
-        </>
+        </Layout>
     );
 }
 
