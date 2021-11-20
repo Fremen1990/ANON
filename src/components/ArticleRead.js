@@ -2,11 +2,13 @@ import React, {useState, useEffect} from "react";
 import {read} from "./apiCore"
 import ShowImage from "./ShowImage";
 import "./artricleRead.scss"
-
 import "../App.scss"
 
 import Slide from "react-reveal"
 import Layout from "./Layout";
+
+import Disqus from "disqus-react"
+import { DiscussionEmbed } from 'disqus-react';
 
 export default function ArticleSociety(props) {
 
@@ -29,7 +31,21 @@ export default function ArticleSociety(props) {
         const articleId = props.match.params.articleId;
 
         loadSingleArticle(articleId);
+
     }, []);
+
+    const currentURL = window.location.href // returns the absolute URL of a page
+
+    const disqusShortname = "animalsnature-org"
+    const disqusConfig = {
+        url: currentURL,
+        identifier: props.match.params.articleId,
+        title: article.name
+    }
+
+
+
+
 
     return (
 
@@ -48,6 +64,7 @@ export default function ArticleSociety(props) {
                         <ShowImage item={article} url="article"/>
                     </div>
 
+                    {/*{JSON.stringify(currentURL)}*/}
 
 
                     {article.paragraph1 ? <p className="article_paragraph text-justify mt-2 lh-base">
@@ -110,9 +127,26 @@ export default function ArticleSociety(props) {
                         <span>Author: {article.author}</span>
 
                     </footer>
+                    <Disqus.DiscussionEmbed
+                        shortname={disqusShortname}
+                        config={disqusConfig}
+                    />
 
-
+                    <DiscussionEmbed
+                        shortname={disqusShortname}
+                        config={
+                            {
+                                url: currentURL,
+                                identifier: props.match.params.articleId,
+                                title: article.name,
+                                language: 'EN'
+                            }
+                        }
+                    />
                 </div>
+
+
+
             </div>
         </Slide>
 

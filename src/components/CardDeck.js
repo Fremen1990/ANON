@@ -1,64 +1,77 @@
 import React from 'react';
-import SocietyIcon from "../assets/articles/icons/ikona-articles-society.svg";
-import ScienceIcon from "../assets/articles/icons/ikona-articles-science.svg";
-import CriminalIcon from "../assets/articles/icons/ikona-articles-criminology.svg";
+// import SocietyIcon from "../assets/articles/icons/ikona-articles-society.svg";
+// import ScienceIcon from "../assets/articles/icons/ikona-articles-science.svg";
+// import CriminalIcon from "../assets/articles/icons/ikona-articles-criminology.svg";
 import "./CardDeck.scss"
-import {Link} from "react-router-dom";
+// import {Link} from "react-router-dom";
 
 import {data} from "./pages/data"
+import CardDeckItem from "./CardDeckItem";
 
 export default function CardDeck() {
+
+    const name1 = data.categories[0].name;
+    const linkTo1 = data.categories[0].linkTo;
+    const LogoCard1 = data.categories[0].imgSrc;
+
+
     return (
         <>
 
             <div className="card-deck ">
-                <Link
-                    to="/society"
-                    // className="article-card__Society"
-                    className="col-md-4 text-dark  "
-                >
-                    <div className="card ">
-                        <div className="card-img-background">
-                            <img className="card-img-top" src={SocietyIcon} alt="Card image cap"></img>
 
-                        </div>
-                        <div className="card-body">
-                            <h5 className="card-title">Społeczeństwo</h5>
-                        </div>
-                    </div>
-                </Link>
 
-                <Link
-                    to="/science"
-                    // className="article-card__Science"
-                    className="col-md-4 text-dark"
-                >
-                    <div className="card">
-                        <div className="card-img-background">
-                            <img className="card-img-top" src={ScienceIcon}
-                                 alt="Card image cap"></img>
-                        </div>
-                        <div className="card-body">
-                            <h5 className="card-title">Nauka</h5>
-                        </div>
-                    </div>
-                </Link>
+                <CardDeckItem name={name1} linkTo={linkTo1} LogoCard={LogoCard1} />
+                <CardDeckItem name={name1} linkTo={linkTo1} LogoCard={LogoCard1} />
+                <CardDeckItem name={name1} linkTo={linkTo1} LogoCard={LogoCard1} />
 
-                <Link
-                    to="/criminal"
-                    //  className="article-card__Criminal"
-                    className="col-md-4 text-dark"
-                >
-                    <div className="card">
-                        <div className="card-img-background">
-                            <img className="card-img-top" src={CriminalIcon}
-                                 alt="Card image cap"></img>
-                        </div>
-                        <div className="card-body">
-                            <h5 className="card-title">Przestępczość</h5>
-                        </div>
-                    </div>
-                </Link>
+                {/*<Link*/}
+                {/*    to="/society"*/}
+                {/*    // className="article-card__Society"*/}
+                {/*    className="col-md-4 text-dark  "*/}
+                {/*>*/}
+                {/*    <div className="card ">*/}
+                {/*        <div className="card-img-background">*/}
+                {/*            <img className="card-img-top" src={SocietyIcon} alt="Card image cap"></img>*/}
+
+                {/*        </div>*/}
+                {/*        <div className="card-body">*/}
+                {/*            <h5 className="card-title">Społeczeństwo</h5>*/}
+                {/*        </div>*/}
+                {/*    </div>*/}
+                {/*</Link>*/}
+
+                {/*<Link*/}
+                {/*    to="/science"*/}
+                {/*    // className="article-card__Science"*/}
+                {/*    className="col-md-4 text-dark"*/}
+                {/*>*/}
+                {/*    <div className="card">*/}
+                {/*        <div className="card-img-background">*/}
+                {/*            <img className="card-img-top" src={ScienceIcon}*/}
+                {/*                 alt="Card image cap"></img>*/}
+                {/*        </div>*/}
+                {/*        <div className="card-body">*/}
+                {/*            <h5 className="card-title">Nauka</h5>*/}
+                {/*        </div>*/}
+                {/*    </div>*/}
+                {/*</Link>*/}
+
+                {/*<Link*/}
+                {/*    to="/criminal"*/}
+                {/*    //  className="article-card__Criminal"*/}
+                {/*    className="col-md-4 text-dark"*/}
+                {/*>*/}
+                {/*    <div className="card">*/}
+                {/*        <div className="card-img-background">*/}
+                {/*            <img className="card-img-top" src={CriminalIcon}*/}
+                {/*                 alt="Card image cap"></img>*/}
+                {/*        </div>*/}
+                {/*        <div className="card-body">*/}
+                {/*            <h5 className="card-title">Przestępczość</h5>*/}
+                {/*        </div>*/}
+                {/*    </div>*/}
+                {/*</Link>*/}
             </div>
         </>
     )
