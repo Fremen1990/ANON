@@ -4,7 +4,7 @@ import queryString from "query-string";
 
 
 export const getArticles = (sortBy) => {
-    return fetch(`${API_EXTERNAL}/articles?sort_by=${sortBy}&order=desc&limit=6`, {
+    return fetch(`${API}/articles?sort_by=${sortBy}&order=desc&limit=6`, {
         method: "GET",
     })
         .then((response) => {
@@ -14,7 +14,7 @@ export const getArticles = (sortBy) => {
 };
 
 export const read = (articleId) => {
-    return fetch(`${API_EXTERNAL}/article/${articleId}`, {
+    return fetch(`${API}/article/${articleId}`, {
         method: "GET",
     })
         .then((response) => {
@@ -24,7 +24,7 @@ export const read = (articleId) => {
 };
 
 export const getCategories = () => {
-    return fetch(`${API_EXTERNAL}/categories`, {
+    return fetch(`${API}/categories`, {
         method: "GET",
     })
         .then((response) => {
@@ -36,7 +36,7 @@ export const getCategories = () => {
 
 
 export const getCategory = (categoryId) => {
-    return fetch(`${API_EXTERNAL}/category/${categoryId}`, {
+    return fetch(`${API}/category/${categoryId}`, {
         method: "GET",
     })
         .then((response) => {
@@ -53,7 +53,7 @@ export const getFilteredArticles = (skip, limit, filters = {}) => {
         filters,
     };
 
-    return fetch(`${API_EXTERNAL}/articles/by/search`, {
+    return fetch(`${API}/articles/by/search`, {
         method: "POST",
         headers: {
             Accept: "application/json",
@@ -70,7 +70,7 @@ export const getFilteredArticles = (skip, limit, filters = {}) => {
 };
 
 export const listRelated = (articleId) => {
-    return fetch(`${API_EXTERNAL}/products/related/${articleId}`, {
+    return fetch(`${API}/products/related/${articleId}`, {
         method: "GET",
     })
         .then((response) => {
