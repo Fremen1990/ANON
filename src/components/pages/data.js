@@ -75,7 +75,7 @@ projects:[
             _id: 7,
             name: "Historia",
             imgSrc: L_HISTORY,
-            linkTo: "/hostory"
+            linkTo: "/history"
         },
         {
             _id: 8,
