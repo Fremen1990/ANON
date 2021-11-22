@@ -53,8 +53,10 @@ export default function Science() {
                             />
                         ))}
 
+                        <div className="h-50"></div>
 
                     </ul>
+
                 </div>
             </div>
         </Layout>

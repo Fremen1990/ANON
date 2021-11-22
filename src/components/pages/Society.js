@@ -65,7 +65,7 @@ const Society = () => {
         }, ['']);
 
         return (
-            <Layout>
+
                 <div className="society page-animation">
                     <div className="articles-container">
                         <nav className="articles-menu">
@@ -82,13 +82,13 @@ const Society = () => {
                                 />
                             ))}
 
-
+<div className="h-50"></div>
 
                         </ul>
 
                     </div>
                 </div>
-            </Layout>
+
         );
     }
 

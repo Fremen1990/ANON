@@ -9,7 +9,7 @@ export default function History() {
         <Layout>
             <div className="about-container page-animation">
 
-                <div className="about-content-container">
+                <div className="about-content-container align-items-start p-4">
                     <h2 className="m-4">Dokumenty</h2>
 
                     <ul className="list-unstyled">
