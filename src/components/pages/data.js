@@ -16,24 +16,24 @@ export const data = {
             name: "Społeczeństwo",
             imgSrc: L_SOCIETY,
             linkTo: "/society",
-            _id:	"61705cb0ce5c468ae975398a"
-            // _id:	"618fcaa225f312d839fd7e8e"
+            // _id:	"61705cb0ce5c468ae975398a"
+            _id:	"618fcaa225f312d839fd7e8e"
         },
         {
             id: 2,
             name: "Nauka",
             imgSrc: L_SCIENCE,
             linkTo: "/science",
-            _id:	"61705cbcce5c468ae9753990"
-            // _id:	"618fcabc25f312d839fd7e94"
+            // _id:	"61705cbcce5c468ae9753990"
+            _id:	"618fcabc25f312d839fd7e94"
         },
         {
             id: 3,
             name: "Przestępczość",
             imgSrc: L_CRIMINAL,
             linkTo: "/criminal",
-            _id:	"618fc857e9dbb9bf731578a8"
-            // _id:	"618fcab825f312d839fd7e91"
+            // _id:	"618fc857e9dbb9bf731578a8"
+            _id:	"618fcab825f312d839fd7e91"
         }
     ],
 
