@@ -1,95 +1,63 @@
-import React, { useEffect, useState } from "react";
-
+import React, {useEffect, useState} from "react";
 import "../styles/main.scss";
 import "./Society.scss";
-
-
 import "../../App.scss"
 
-
-import {getArticles, getFilteredArticles} from "../apiCore"
+import { listRelatedCategory,} from "../apiCore"
 import ArticleItem from "../ArticleItem";
 import Layout from "../Layout";
+import {data} from "./data"
 
 const Society = () => {
 
-    const categorySociety ="618fcaa225f312d839fd7e8e"
-    const categoryScience ="618fcabc25f312d839fd7e94"
-
-    const [myFilters, setMyFilters] = useState({
-        filters: {
-            category: [],
-            approved: [],
-        },
-    });
+const categoriesData = data.categories[0]._id;
 
     const [error, setError] = useState(false);
     const [limit, setLimit] = useState(25);
-    const [articlesByArrival, setArticlesByArrival] = useState([]);
 
+    const [articles, setArticles] = useState({
+        results: [],
+    });
 
-    const [categories, setCategories] = useState([]);
-    const [skip, setSkip] = useState(0);
-    const [size, setSize] = useState(0);
-    const [filteredResults, setFilteredResults] = useState(0);
-    // const [articles, setArticles] = useState([]);
+    const {results} = articles;
 
-
-    const loadArticlesByArrival = () => {
-        getArticles("createdAt", limit).then((data) => {
-            if (data.error) {
-                setError(data.error);
-            } else {
-                setArticlesByArrival(data);
+    const searchData =  () => {
+         listRelatedCategory(categoriesData, "createdAt", limit).then(
+            (response) => {
+                if (response.error) {
+                    console.log(response.error);
+                } else {
+                    setArticles({results: response});
+                }
             }
-        });
-    };
-
-    const loadFilteredResults = (categorySociety) => {
-        // console.log(newFilters)
-        getFilteredArticles(skip, limit, categorySociety).then((data) => {
-            if (data.error) {
-                setError(data.error);
-            } else {
-                setFilteredResults(data.data);
-                setSize(data.size);
-                setSkip(0);
-            }
-        });
-    };
-
-
-        useEffect(() => {
-            loadArticlesByArrival();
-            // loadFilteredResults();
-        }, ['']);
-
-        return (
-
-                <div className="society page-animation">
-                    <div className="articles-container">
-                        <nav className="articles-menu">
-                            <span className="society-header">Społeczność</span>
-
-                        </nav>
-                        <ul className="article-list p-3">
-
-                            {articlesByArrival.map((article, i) => (
-                                <ArticleItem
-                                    key={i}
-                                    article={article}
-
-                                />
-                            ))}
-
-<div className="h-50"></div>
-
-                        </ul>
-
-                    </div>
-                </div>
-
         );
-    }
+    };
+
+    useEffect(() => {
+        // loadCategories();
+        searchData();
+    }, []);
+
+
+    return (
+
+        <div className="society page-animation">
+            <div className="articles-container">
+                <nav className="articles-menu">
+                    <span className="society-header">Społeczność ({results.length})</span>
+                </nav>
+                <ul className="article-list p-0">
+                    <div className="row">
+                        {results.map((article, i) => (
+                            <ArticleItem key={i} article={article}></ArticleItem>
+                        ))}
+                    </div>
+                    <div className="h-50"></div>
+                </ul>
+            </div>
+        </div>
+
+    );
+}
 
 export default Society;

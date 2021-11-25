@@ -1,5 +1,4 @@
 import React from "react";
-import CardDeckProjects from "../CardDeckProjects";
 import "../styles/main.scss";
 import "../../App.scss"
 import Layout from "../Layout";

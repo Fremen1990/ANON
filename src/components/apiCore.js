@@ -1,10 +1,36 @@
-import {API, API_EXTERNAL} from "../config";
+import {API} from "../config";
 import queryString from "query-string";
 
 
+export const list = (params) => {
+    const query = queryString.stringify(params);
+
+    console.log("query", query);
+    return fetch(`${API}/articles?${query}`, {
+        method: "GET",
+    })
+        .then((response) => {
+            return response.json();
+        })
+        .catch((err) => console.log(err));
+};
 
 export const getArticles = (sortBy) => {
-    return fetch(`${API}/articles?sort_by=${sortBy}&order=desc&limit=6`, {
+    return fetch(`${API}/articles?sort_by=${sortBy}&order=desc&limit=99`, {
+        method: "GET",
+    })
+        .then((response) => {
+            return response.json();
+        })
+        .catch((err) => console.log(err));
+};
+
+// ${categoryId}?sort_by=${sortBy}&order=desc&limit=99
+//?sort_by=${sortBy}&order=desc&limit=99
+
+export const getArticlesByCategory = (sortBy) => {
+
+    return fetch(`${API}/articles/byCategory/618fcaa225f312d839fd7e8e?sort_by=${sortBy}&order=desc&limit=99`, {
         method: "GET",
     })
         .then((response) => {
@@ -69,8 +95,8 @@ export const getFilteredArticles = (skip, limit, filters = {}) => {
         });
 };
 
-export const listRelated = (articleId) => {
-    return fetch(`${API}/products/related/${articleId}`, {
+export const listRelatedCategory = (categoryId, sortBy,limit) => {
+    return fetch(`${API}/articles/byCategory/${categoryId}?sort_by=${sortBy}&order=desc&limit=${limit}`, {
         method: "GET",
     })
         .then((response) => {

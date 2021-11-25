@@ -12,23 +12,28 @@ import L_DOCUMENTS from "../../assets/about/icons/ikona-about-documents.svg";
 export const data = {
     categories: [
         {
-            _id: 1,
+            id: 1,
             name: "Społeczeństwo",
             imgSrc: L_SOCIETY,
-            linkTo: "/society"
+            linkTo: "/society",
+            _id:	"61705cb0ce5c468ae975398a"
+            // _id:	"618fcaa225f312d839fd7e8e"
         },
         {
-            _id: 2,
+            id: 2,
             name: "Nauka",
             imgSrc: L_SCIENCE,
-            linkTo: "/science"
-
+            linkTo: "/science",
+            _id:	"61705cbcce5c468ae9753990"
+            // _id:	"618fcabc25f312d839fd7e94"
         },
         {
-            _id: 3,
+            id: 3,
             name: "Przestępczość",
             imgSrc: L_CRIMINAL,
-            linkTo: "/criminal"
+            linkTo: "/criminal",
+            _id:	"618fc857e9dbb9bf731578a8"
+            // _id:	"618fcab825f312d839fd7e91"
         }
     ],
 
