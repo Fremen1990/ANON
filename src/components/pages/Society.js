@@ -3,7 +3,7 @@ import "../styles/main.scss";
 import "./Society.scss";
 import "../../App.scss"
 
-import { listRelatedCategory,} from "../apiCore"
+import {listRelatedCategory, listRelatedCategoryPublished} from "../apiCore"
 import ArticleItem from "../ArticleItem";
 import Layout from "../Layout";
 import {data} from "./data"
@@ -27,10 +27,18 @@ const categoriesData = data.categories[0]._id;
                 if (response.error) {
                     console.log(response.error);
                 } else {
+                    response.forEach((article , i )=> {
+                        if (article.approved !== 1) {
+                            response.splice(i,1);
+                        }
+                    })
                     setArticles({results: response});
                 }
             }
         );
+
+
+
     };
 
     useEffect(() => {
@@ -44,7 +52,7 @@ const categoriesData = data.categories[0]._id;
         <div className="society page-animation">
             <div className="articles-container">
                 <nav className="articles-menu">
-                    <span className="society-header">Społeczność ({results.length})</span>
+                    <span className="society-header">Społeczeństwo ({results.length})</span>
                 </nav>
                 <ul className="article-list p-0">
                     <div className="row">

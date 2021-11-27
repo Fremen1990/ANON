@@ -29,6 +29,11 @@ export default function Science() {
                 if (response.error) {
                     console.log(response.error);
                 } else {
+                    response.forEach((article , i )=> {
+                        if (article.approved !== 1) {
+                            response.splice(i,1);
+                        }
+                    })
                     setArticles({results: response});
                 }
             }
@@ -45,7 +50,7 @@ export default function Science() {
             <div className="society page-animation">
                 <div className="articles-container">
                     <nav className="articles-menu">
-                        <span>Nauka</span>
+                        <span>Nauka ({results.length})</span>
 
                     </nav>
 

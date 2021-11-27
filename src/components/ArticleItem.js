@@ -19,7 +19,7 @@ const categoryCriminal ="618fcab825f312d839fd7e91";
     <Link
             to={`/article/${article._id}`}
         >
-        {JSON.stringify(article.category._id)}
+        {/*{JSON.stringify(article.category._id)}*/}
         {/*{JSON.stringify(article.category._id)}*/}
             <li className="article-item d-flex align-items-center border p-2 col-12 focus">
                 <ShowImage item={article} url="article" className="col-3" />

@@ -26,34 +26,47 @@ export default function Criminal() {
 
     const {results} = articles;
 
-    const searchData =  () => {
+    const searchData = () => {
         listRelatedCategory(categoriesData, "createdAt", limit).then(
             (response) => {
                 if (response.error) {
                     console.log(response.error);
                 } else {
+                    response.forEach((article , i )=> {
+                        if (article.approved !== 1) {
+                            response.splice(i,1);
+                        }
+                    })
                     setArticles({results: response});
+
                 }
             }
         );
+
+
     };
+
+
+    setTimeout((console.log(results)), 1000);
+    // setTimeout(console.log(resultt.approved) , 1000);
+
 
     useEffect(() => {
         // loadCategories();
         searchData();
+
     }, []);
 
     return (
- <Layout>
+        <Layout>
             <div className="society page-animation">
                 <div className="articles-container">
                     <nav className="articles-menu">
-                        <span>Przestępczość</span>
+                        <span>Przestępczość ({results.length})</span>
 
                     </nav>
 
                     <ul className="article-list p-0">
-
                         <div className="row">
                             {results.map((article, i) => (
                                 <ArticleItem key={i} article={article}></ArticleItem>
@@ -64,6 +77,6 @@ export default function Criminal() {
                     </ul>
                 </div>
             </div>
- </Layout>
+        </Layout>
     );
 }

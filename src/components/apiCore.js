@@ -104,3 +104,5 @@ export const listRelatedCategory = (categoryId, sortBy,limit) => {
         })
         .catch((err) => console.log(err));
 };
+
+
